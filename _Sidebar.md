@@ -1,8 +1,5 @@
-**Our Community**
-* [[Community]]
+**[[Community]]**
 
-**Installation**
-
-* [[Installation]]
+**[[Installation]]**
 
 **Development**
