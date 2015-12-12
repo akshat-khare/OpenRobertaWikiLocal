@@ -8,6 +8,6 @@
 
 **Development**
 * [[Get Started]]
-** [[Git]]
-** [[Maven]]
-** [[Eclipse]]
+  * [[Git]]
+  * [[Maven]]
+  * [[Eclipse]]
