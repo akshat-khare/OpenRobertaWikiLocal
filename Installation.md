@@ -11,7 +11,7 @@
 License information is available in the docs folder.
 
 ### Compilation and build
-1. `$ cd /robertalab/OpenRobertaParent` move from the root folder to the folder of the (maven) parent project
+1. `$ cd robertalab/OpenRobertaParent` move from the root folder to the folder of the (maven) parent project
 1. `$ mvn clean install` or `$ mvn clean install -DskipTests` if you don't want to run all the tests
 1. Get a coffee! Might take a couple of minutes.
 1. A successful build looks like:
