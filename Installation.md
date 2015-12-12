@@ -31,7 +31,7 @@ License information is available in the docs folder.
 [INFO] ------------------------------------------------------------------------ 
 ```
 ### Start the server
-`$ cd ..` # return to the root folder
+`$ cd ..` return to the root folder
 * Starting your own server instance, if a unix-like shell is available (on either lin* or win*).
   * `$ ./ora.sh --start` # start the server, using default properties. Use --help for more options.
 * or `$ java -cp target/OpenRobertaServer-1.0.0-SNAPSHOT.jar de.fhg.iais.roberta.main.ServerStarter` 
