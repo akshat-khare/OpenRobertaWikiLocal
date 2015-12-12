@@ -7,6 +7,7 @@
 * [[EV3 and ev3dev]]
 
 **Development**
+* [[Info]]
 * [[Get Started]]
   * [[Git]]
   * [[Maven]]
