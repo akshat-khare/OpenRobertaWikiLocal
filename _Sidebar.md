@@ -1,7 +1,7 @@
 **[[Community]]**
 
 **Installation**
-* [[Installation][a]]**
+* [[Windows/Mac OSX /Linux|Installation]]**
 * [[Raspberry Pi 2]]
 
 **Development**
