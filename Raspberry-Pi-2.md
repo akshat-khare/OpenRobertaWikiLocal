@@ -1,4 +1,4 @@
-## First time setup
+## First time setup for system and WiFi router
 
 in addition to your Raspberry Pi you will need
 * micro USB-cable (power cable)
