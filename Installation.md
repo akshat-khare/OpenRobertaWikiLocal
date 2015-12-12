@@ -16,14 +16,19 @@ License information is available in the docs folder.
 1. Get a coffee! Might take a couple of minutes.
 1. A successful build looks like:
 ```
-[INFO] --------------------------------------- 
-[INFO] Reactor Summary:`
-[INFO] RobertaParent ..................SUCCESS 
-[INFO] OpenRobertaShared ..............SUCCESS
-[INFO] OpenRobertaServer ..............SUCCESS
-[INFO] OpenRobertaRuntime .............SUCCESS
-[INFO] ---------------------------------------
-[INFO] BUILD SUCCESS  
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] RobertaParent ...................................... SUCCESS [  0.326 s]
+[INFO] Resources .......................................... SUCCESS [  0.007 s]
+[INFO] OpenRobertaShared .................................. SUCCESS [  2.415 s]
+[INFO] OpenRobertaRuntime ................................. SUCCESS [  1.020 s]
+[INFO] EV3Menu ............................................ SUCCESS [  0.665 s]
+[INFO] OpenRobertaRobot ................................... SUCCESS [  5.727 s]
+[INFO] OpenRobertaServer .................................. SUCCESS [  3.521 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------ 
 ```
 ### Start the server
 `$ cd ..` # return to the root folder
