@@ -37,6 +37,6 @@ License information is available in the docs folder.
 * or `$ java -cp target/OpenRobertaServer-1.0.0-SNAPSHOT.jar de.fhg.iais.roberta.main.ServerStarter` 
 
 ### Check the server
-Start your server at `localhost:1999`
+Start your browser at `localhost:1999`
 
 ### That's it!
