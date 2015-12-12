@@ -16,6 +16,6 @@ We are using the IRC channel `#open-roberta` on Freenode for our developer group
 
 [Open Roberta Issues](https://github.com/OpenRoberta/robertalab/issues)
 
-If you spot a bug, then please raise an issue in our main GitHub project (OpenRoberta/robertalab); likewise if you have developed a cool new feature or improvement in your Snowplow fork, then send us a pull request!
+If you spot a bug, then please raise an issue in our main GitHub project (OpenRoberta/robertalab).
 
 If you want to brainstorm a potential new feature, then the Open Roberta Google Group (see above) is probably a better place to start.
