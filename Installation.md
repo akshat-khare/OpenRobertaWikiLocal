@@ -1,6 +1,6 @@
 ### What you need
-* Java JDK 1.7 
-* Maven 3.2.x
+* Java JDK 1.7, 1.8 will **not** work currently
+* Maven 3.2.x, 3.3.3 works fine
 
 ### Get robertalab
 * clone the repository with `git clone https://github.com/OpenRoberta/robertalab.git`
@@ -29,4 +29,9 @@ License information is available in the docs folder.
 `$ cd ..` # return to the root folder
 * Starting your own server instance, if a unix-like shell is available (on either lin* or win*).
   * `$ ./ora.sh --start` # start the server, using default properties. Use --help for more options.
-* or `$ java -cp target/OpenRobertaServer-1.0.0-SNAPSHOT.jar de.fhg.iais.roberta.main.ServerStarter` # start
+* or `$ java -cp target/OpenRobertaServer-1.0.0-SNAPSHOT.jar de.fhg.iais.roberta.main.ServerStarter` 
+
+### Check the server
+Start your server at `localhost:1999`
+
+### That's it!
