@@ -1,1 +1,1 @@
-[[Home]] | [[Community]] | [[Installation]] | [Team](https://github.com/orgs/OpenRoberta/teams/open-roberta-team) <img align="right" src="https://github.com/OpenRoberta/robertalab/blob/master/OpenRobertaServer/staticResources/css/img/Nepo_N.png">
+[[Home]] | [[Community]] | [[Installation]] | [Team](https://github.com/orgs/OpenRoberta/teams/open-roberta-team) <img align="right" width = "25px" src="https://github.com/OpenRoberta/robertalab/blob/master/OpenRobertaServer/staticResources/css/img/Nepo_N.png">
