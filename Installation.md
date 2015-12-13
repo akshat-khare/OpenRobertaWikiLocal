@@ -3,9 +3,8 @@
 * Maven 3.2.x, 3.3.3 works fine
 
 ### Get robertalab
-* clone the repository with `git clone https://github.com/OpenRoberta/robertalab.git`
-
-  or
+* clone the repository with `git clone https://github.com/OpenRoberta/robertalab.git`   
+  or   
 * download the repository [here](https://github.com/OpenRoberta/robertalab/archive/master.zip) and unzip it
 
 License information is available in the docs folder.
@@ -32,8 +31,8 @@ License information is available in the docs folder.
 ```
 ### Start the server
 `$ cd ..` return to the root folder
-* Starting your own server instance, if a unix-like shell is available (on either lin* or win*).
-  * `$ ./ora.sh --start` # start the server, using default properties. Use --help for more options.
+* Starting your own server instance, if a unix-like shell is available (on either lin* or win*).   
+  `$ ./ora.sh --start` # start the server, using default properties. Use --help for more options.
 * or `$ java -cp target/OpenRobertaServer-1.0.0-SNAPSHOT.jar de.fhg.iais.roberta.main.ServerStarter` 
 
 ### Check the server
