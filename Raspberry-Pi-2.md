@@ -57,16 +57,12 @@ collect the data you need for setting up a static IP for your Raspberry Pi. Look
 1. note the following numbers: 
   1. Gateway
   1. Destination
-1. Edit the Network Configuration with:
+1. Edit the Network Configuration with:   
    `$ sudo nano /etc/network/interfaces`
-1. Change the line
-   
-   `iface eth0 inet dhcp`
-   
-   to
-   
-   `iface eth0 inet static`
-   
+1. Change the line      
+   `iface eth0 inet dhcp`   
+   to   
+   `iface eth0 inet static`   
 1. Below this line enter you gathered data with
 ```
 address <insert number you noted by inet addr>
@@ -76,8 +72,7 @@ broadcast <insert number you noted by Bcast>
 gateway <insert number you noted by Gateway>
 ```
 1. Save and Quit (CTRL+X and  type y to save changes)
-1. To remove existing leases run `$ sudo rm /var/lib/dhcp/*`
-
+1. To remove existing leases run `$ sudo rm /var/lib/dhcp/*`   
    Then `$ sudo reboot`
 1. Check your settings with ifconfig or ping your Gateway Address with `ping xxx.xxx.x.xxx –c10`
 
@@ -104,29 +99,30 @@ quit and save, then logout and log back in
 
 ### Install via Git
 Next you clone your directory   
-`$ git clone https://github.com/OpenRoberta/robertalab.git` 
-  
+`$ git clone https://github.com/OpenRoberta/robertalab.git`     
 ... this might take a while ...   
 
 check the branches   
-```
-$ cd robertalab/
-$ git branch
-*master
-```
-Build the application
-```
-$ cd /OpenRobertaParent
-$ mvn clean install -DskipTests  
-... this might also take a while ...  
-Start the server
-```
-$ cd ..
-$ ./ora.sh --start
-```
+`$ cd robertalab/`  
+`'$ git branch`   
+`*master`
+
+build the application:   
+`$ cd /OpenRobertaParent`   
+`$ mvn clean install -DskipTests`   
+... this might also take a while ...
+  
+start the server:
+`$ cd ..`   
+`$ ./ora.sh --start`
 Usually the whole proccess is logged on the screen. However, if you want to save your logs to a file this is how you do it:   
 `./ora.sh --start > log.txt &`  
-The process will then run in the background and all system messages will be written in the textfile log.txt. 
+The process will then run in the background and all system messages will be written in the textfile log.txt.
+
+stop the server:
+`Ctrl` + `c`   
+or if your server is running in the background:   
+`ps -e|grep java`
 
 ## Wifi Access Point
 If not done yet, plug the Wifi Adapter into the Raspberry pi.
