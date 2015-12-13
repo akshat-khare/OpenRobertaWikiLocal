@@ -104,7 +104,7 @@ Next you clone your directory
 
 check the branches   
 `$ cd robertalab/`  
-`'$ git branch`   
+`$ git branch`   
 `*master`
 
 build the application:   
