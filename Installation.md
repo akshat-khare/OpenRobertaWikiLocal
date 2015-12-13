@@ -34,7 +34,7 @@ License information is available in the docs folder.
 * Starting your own server instance, if a unix-like shell is available (on either lin* or win*).   
   `$ ./ora.sh --start` # start the server, using default properties. Use --help for more options.   
   or  
-* `$ java -cp target/OpenRobertaServer-1.3.2-SNAPSHOT.jar de.fhg.iais.roberta.main.ServerStarter` 
+* `$ java -cp target/resources/\* de.fhg.iais.roberta.main.ServerStarter` 
 
 ### Check the server
 Start your browser at `localhost:1999`
