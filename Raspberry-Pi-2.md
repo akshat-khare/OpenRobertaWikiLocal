@@ -1,6 +1,6 @@
 ## First time setup for system and WiFi router
 
-in addition to your Raspberry Pi you will need
+In addition to your Raspberry Pi 2 you will need
 * micro USB-cable (power cable)
 * ethernet cable
 * USB wifi adaper
@@ -81,68 +81,54 @@ gateway <insert number you noted by Gateway>
    Then `$ sudo reboot`
 1. Check your settings with ifconfig or ping your Gateway Address with `ping xxx.xxx.x.xxx –c10`
 
-## Installing the Server
+## Installing the Open Roberta Server
 ### Requirements
 Requirements to install the Server on your Raspberry Pi:
-* Git: pre installed
+* Git: preinstalled
 * JDK: `$ sudo apt-get install openjdk-7-jdk`
 * Maven: `$ sudo apt-get install maven`
 
 Sometimes you may experience conflicts with the maven version you get with "apt-get" This is the alternative installation, which will install version 3.2.5 on the Raspberry Pi
-type: 
-wget http://www.mirrorservice.org/sites/ftp.apache.org/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz
-type:
-sudo tar -xzvf /path/to/apache-maven-3.2.5-bin.tar.gz
-type:
-sudo mv apache-maven-3.2.5 /opt/
-type:
-sudo nano /etc/profile.d/maven.sh
+```
+$ wget http://www.mirrorservice.org/sites/ftp.apache.org/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz
+$ sudo tar -xzvf /path/to/apache-maven-3.2.5-bin.tar.gz
+$ sudo mv apache-maven-3.2.5 /opt/
+$ sudo nano /etc/profile.d/maven.sh
+```
 edit the file so it looks like this:
+```
 export M2_HOME=/opt/apache-maven-3.2.5
 export PATH=$PATH:$M2_HOME/bin 
+```
 quit and save, then logout and log back in
 
-Install via Git
-Next you clone your directory
-env GIT_SSL_NO_VERIFY=true git clone https://github.com/OpenRoberta/robertalab.git
-(This might take a while)
-Change the Branches
-When cloning the directory you have to change the branch from "develop" to "master" to access the right repositories. navigate to:
-cd robertalab/
-type
-git branch
-you should see the line
-*master
-if that is not the case, you have to change branches with:
-git fetch master
-git checkout master
-check if the change was made with
-git branch
-you should see
-develop 
-*master
-the * indicates which branch you are operating on. After you changed branches run maven:
-Navigate to
-cd /OpenRobertaParent
-run
-mvn clean install -DskipTests
-(This might also take a while)
-Start
-go back to your robertalab directory
-type the following to export your Installation. This way you can have multiple instances installed to store your programs in multiple databases
-./ora.sh --export -e ../export
-This installs the Lab to the directory "export". Change the name, if you want the directory to have another name. (or to distinguish between multiple installations).
-go into your newly created directory
-cd ../export
-start the server with 
-./ora.sh --serverurl 192.168.42.1:1999 --start &
-Usually the whole proccess is logged on the screen. However, if you want to save your logs to a file this is how you do it:
-Setting a Time Variable
-The command to start the server would now be
-./ora.sh --serverurl 192.168.42.1:1999 --start > log-${fn}.txt &
-The Process will then run in the Background.
+### Install via Git
+Next you clone your directory   
+`$ git clone https://github.com/OpenRoberta/robertalab.git` 
+  
+... this might take a while ...   
 
-Wifi Access Point
+check the branches   
+```
+$ cd robertalab/
+$ git branch
+*master
+```
+Build the application
+```
+$ cd /OpenRobertaParent
+$ mvn clean install -DskipTests  
+... this might also take a while ...  
+Start the server
+```
+$ cd ..
+$ ./ora.sh --start
+```
+Usually the whole proccess is logged on the screen. However, if you want to save your logs to a file this is how you do it:   
+`./ora.sh --start > log.txt &`  
+The process will then run in the background and all system messages will be written in the textfile log.txt. 
+
+## Wifi Access Point
 If not done yet, plug the Wifi Adapter into the Raspberry pi.
 Check if its connected with 
 ifconfig
