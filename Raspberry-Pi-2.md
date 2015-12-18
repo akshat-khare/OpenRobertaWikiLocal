@@ -1,21 +1,18 @@
+# Under Construction !!!
 ## First time setup for system and WiFi router
 
-In addition to your Raspberry Pi 2 you will need
+In addition to your Raspberry Pi 2 and a [micro SD card] (https://www.raspberrypi.org/documentation/installation/sd-cards.md) (accessed 18.12.2015) for the system you will need:
 * micro USB-cable (power cable)
 * ethernet cable
 * USB wifi adaper
 * USB Keyboard
-* Monitor (HDMI)
-* micro SD-Card
+* Monitor (HDMI)  
+
+you can get more information [here](https://www.raspberrypi.org/documentation/setup/)
 
 ### Preparing the SD-Card
+The README site from Raspberry Pi 2 provides you all necessary information to download, extract and install the image to an SD card: [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) (accessed 18.12.2015)
 
-1. On your PC/Laptop set up your SD-Card. Format it, if needed.
-1. Download [Win32Diskimager] (http://sourceforge.net/projects/win32diskimager/)
-1. Then, download the latest Raspbian [image] (downloads.raspberrypi.org/raspbian_latest)
-1. Write the Image to your SD-Card, using Win32Diskimager.
-   * click on the button with the folder to select your image
-   * select your SD Card Drive. Better double check before you overwrite any important data.
 
 ### Configuring the Raspberry Pi 
 
@@ -271,3 +268,4 @@ and look at the "wlan0" block. Type the number behind "inet addr" into your Brow
 to the end.
 
 You can disconnect the ethernet-cable, it is not neccessary to have, if you only want to work with the Open Roberta Lab. If you want to connect to the Internet via your Raspberry Pi connection, you have to leave the ethernet-cable attached
+***
