@@ -7,8 +7,8 @@ In addition to your Raspberry Pi 2 and a [micro SD card] (https://www.raspberryp
 * micro USB-cable (power cable)
 * ethernet cable
 * USB wifi adaper
-* USB Keyboard
-* Monitor (HDMI)  
+* USB keyboard
+* monitor (HDMI/DVI)  
 
 you can get more information [here](https://www.raspberrypi.org/documentation/setup/)
 
@@ -18,7 +18,9 @@ The README site from Raspberry Pi 2 provides you all necessary information to do
 
 ### Configuring the Raspberry Pi 
 
-Now plug the SD-Card into your Raspberry Pi, connect USB-Keyboard and Ethernet cable as well as Monitor (via HDMI) and your power-cable (micro USB). You need to login. Default login information is:
+Now slot in the SD card into your Raspberry Pi 2, connect a USB-Keyboard and Ethernet cable as well as a monitor and finally your micro usb power supply. Your Raspberry Pi 2 will turn on and boot from the SD card. Now login.
+
+Default login information is:
 ```
 User: pi
 Password: raspberry
