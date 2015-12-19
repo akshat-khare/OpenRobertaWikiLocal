@@ -1,7 +1,9 @@
-# Under Construction !!!
+<p align="center"><b>It is highly recommended to checkout the raspberry's websites, especially <a href="https://www.raspberrypi.org/help/">https://www.raspberrypi.org/help/</a>, where you will find all information about the necessary steps to get started.</b></p>
+
+
 ## First time setup for system and WiFi router
 
-In addition to your Raspberry Pi 2 and a [micro SD card] (https://www.raspberrypi.org/documentation/installation/sd-cards.md) (accessed 18.12.2015) for the system you will need:
+In addition to your Raspberry Pi 2 and a [micro SD card] (https://www.raspberrypi.org/documentation/installation/sd-cards.md) for the system you will need:
 * micro USB-cable (power cable)
 * ethernet cable
 * USB wifi adaper
@@ -11,7 +13,7 @@ In addition to your Raspberry Pi 2 and a [micro SD card] (https://www.raspberryp
 you can get more information [here](https://www.raspberrypi.org/documentation/setup/)
 
 ### Preparing the SD-Card
-The README site from Raspberry Pi 2 provides you all necessary information to download, extract and install the image to an SD card: [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) (accessed 18.12.2015)
+The README site from Raspberry Pi 2 provides you all necessary information to download, extract and install the image to an SD card: [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
 
 ### Configuring the Raspberry Pi 
