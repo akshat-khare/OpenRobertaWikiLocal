@@ -1,4 +1,4 @@
-<p align="center"><b>It is highly recommended to checkout the raspberry's websites, especially <a href="https://www.raspberrypi.org/help/">https://www.raspberrypi.org/help/</a>, where you will find all information about the necessary steps to get started.</b></p>
+<p align="center"><em>It is highly recommended to checkout the raspberry's websites, especially <a href="https://www.raspberrypi.org/help/">https://www.raspberrypi.org/help/</a>, where you will find all information about the necessary steps to get started.</em></p>
 
 
 ## First time setup for system and WiFi router
