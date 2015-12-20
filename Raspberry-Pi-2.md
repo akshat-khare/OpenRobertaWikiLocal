@@ -15,6 +15,11 @@ you can get more information [here](https://www.raspberrypi.org/documentation/se
 ### Preparing the SD-Card
 The README site from Raspberry Pi 2 provides you all necessary information to download, extract and install the image to an SD card: [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
+There are 3 possibilities to get an raspian image
+* NOOBS easy installer for Raspbian (and others)
+* NOOBS Lite network installer for Raspbian (and others)
+* RASPBIAN 
+We have tried all of them, they work without any issues.
 
 ### Configuring the Raspberry Pi 
 
