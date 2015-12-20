@@ -18,7 +18,8 @@ The README site from Raspberry Pi 2 provides you all necessary information to do
 There are 3 possibilities to get a raspian image
 * NOOBS easy installer for Raspbian (and others)
 * NOOBS Lite network installer for Raspbian (and others)
-* RASPBIAN   
+* RASPBIAN  
+ 
 We have tried all of them, they work without any issues.
 
 ### Configuring the Raspberry Pi 
