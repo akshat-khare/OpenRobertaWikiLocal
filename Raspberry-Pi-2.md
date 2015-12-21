@@ -1,3 +1,4 @@
+## under construction
 <p align="center"><em>It is highly recommended to checkout the raspberry's websites, especially <a href="https://www.raspberrypi.org/help/">https://www.raspberrypi.org/help/</a>, where you will find all information about the necessary steps to get started.</em></p>
 
 
@@ -7,8 +8,8 @@ In addition to your Raspberry Pi 2 and a [micro SD card] (https://www.raspberryp
 * micro USB-cable (power cable)
 * ethernet cable
 * USB wifi adaper
-* USB keyboard
-* monitor (HDMI/DVI)  
+* USB keyboard and mouse (see headless installation)
+* monitor with HDMI cable (see headless installation)
 
 you can get more information [here](https://www.raspberrypi.org/documentation/setup/)
 
@@ -16,11 +17,21 @@ you can get more information [here](https://www.raspberrypi.org/documentation/se
 The README site from Raspberry Pi 2 provides you all necessary information to download, extract and install the image to an SD card: [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
 There are 3 possibilities to get a raspian image
-* NOOBS easy installer for Raspbian (and others)
+* NOOBS easy installer for Raspbian (and others). Use this, if you have no keyboard or monitor available -> see headless installation
 * NOOBS Lite network installer for Raspbian (and others)
 * RASPBIAN  
  
 We have tried all of them, they work without any issues.
+
+#### Headless installation
+If you don't have a monitor and/or mouse and keyboard on hand, download [NOOBS easy install for Rasbian](https://downloads.raspberrypi.org/NOOBS_latest), unzip and copy the image to the SD card and open the file `recovery.cmdline` with a simple editor.
+
+Add ` silentinstall` at the end of the first (and only) line, so that it looks like this   
+`runinstaller quiet ramdisk_size=32768 root=/dev/ram0 init=/init vt.cur_default=1 elevator=deadline silentinstall` [(Paul Lunow)](http://www.interaktionsdesigner.de/2014/raspberry-pi-ohne-monitor-tastatur-und-maus-in-betrieb-nehmen/)
+
+Plug in the network and power cable. After the first boot (ca. 30 min, only the red LED is on) your Raspberry Pi will be visible in your routers DHCP table as raspberry. You can now easily log in to your raspberry via ssh from any computer/laptop in your local network.
+
+
 
 ### Configuring the Raspberry Pi 
 
