@@ -61,13 +61,12 @@ It is a good idea to configure the Raspberry Pi to your needs. The first basic c
 1. Overclock. Set to “medium” if you go any further you will need cooling for the raspberry pi.
 1. Advanced Options 
   1. Memory Split. Set to 16.
-  1. Update, recommended
 
 Back at the raspi-config home screen click “finish” (2x Tab).  
 Reboot your Raspberry Pi with `$ sudo reboot`.
 
 #### update
-After the reboot make sure your Raspberry Pi is up-to-date. You will require Internet connection for this!
+After the reboot make sure your Raspberry Pi is up-to-date. You will require internet connection for this!
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
