@@ -35,24 +35,34 @@ Plug in the network and power cable. After the first boot (ca. 30 min, only the 
 
 ### Configuring the Raspberry Pi 
 
-Now slot in the SD card into your Raspberry Pi 2, connect a USB-Keyboard and Ethernet cable as well as a monitor and finally your micro usb power supply. Your Raspberry Pi 2 will turn on and boot from the SD card. Now login.
+Now slot in the SD card into your Raspberry Pi 2, connect a USB-Keyboard and Ethernet cable as well as a monitor and finally your micro usb power supply. Your Raspberry Pi 2 will turn on and boot from the SD card. Now login or connect to your Raspberry Pi via ssh (headless only) and login.
 
 Default login information is:
 ```
 User: pi
 Password: raspberry
 ```
+
+It is a good idea to configure the Raspberry Pi to your needs. The first basic configuration can be done via the Raspberry Pi configuration  tool, for detailed information have a look [here](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
+
 #### raspi-config settings
-1. `$ sudo raspi-config`
-  1. to change Keyboard Layout (Internationalisation Options-> Change Keyboard layout)
-  1. expand fileysytem to make sure there is enough space on your SD card.
-  1. Change user Password, if you want to. Your username will still be Pi.
-  1. Overclock. Set to “medium” if you go any further you will need cooling for the raspberry pi.
-  1. if you want to work with SSH (e.g. Putty), go into advanced options->SSH->Enable.
-  1. Advanced Options->Memory Split. Set to 16.
-1. Back at the raspi-config home screen click “finish” (2x Tab)
-1. reboot your Raspberry Pi with 
-`$ sudo reboot`
+`$ sudo raspi-config`
+1. Expand Filesystem, to make sure there is enough space on your SD card (NOOPS users' file system is expanded automatically during installation).
+1. Change User Password, if you want to (recommended). The username will still be pi.
+1. Boot Options, nothing to do.
+1. Wait for Network at Boot, nothing to do.
+1. Internationalisation Options, recommended (NOOPS Lite seems to have the correct settings.
+  1. Change Locale, set up language and regional settings, for Germany e.g. choose `de_DE.UTF-8 UTF-8` (type Space to get a star there).
+  1. Change Timezone, set up timezone to match your location.    
+  1. Change Keyboard Layout, set the keyboard layout to match to your own, for Querz find a generic keyboard with 105 keys and choose German.
+1. Enable Camera, nothing to do.
+1. Add to Rastrack, why not?
+1. Overclock. Set to “medium” if you go any further you will need cooling for the raspberry pi.
+1. Advanced Options 
+  1. Memory Split. Set to 16.
+  1. Update, recommended
+Back at the raspi-config home screen click “finish” (2x Tab)  
+reboot your Raspberry Pi with `$ sudo reboot`
 
 #### update
 After the reboot make sure your Raspberry Pi is up-to-date. You will require Internet connection for this!
