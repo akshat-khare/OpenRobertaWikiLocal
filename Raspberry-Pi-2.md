@@ -46,13 +46,14 @@ Password: raspberry
 It is a good idea to configure the Raspberry Pi to your needs. The first basic configuration can be done via the Raspberry Pi configuration  tool, for detailed information have a look [here](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
 
 #### raspi-config settings
-`$ sudo raspi-config`
+`$ sudo raspi-config` 
+ 
 1. Expand Filesystem, to make sure there is enough space on your SD card (NOOPS users' file system is expanded automatically during installation).
 1. Change User Password, if you want to (recommended). The username will still be pi.
 1. Boot Options, nothing to do.
 1. Wait for Network at Boot, nothing to do.
 1. Internationalisation Options, recommended (NOOPS Lite seems to have the correct settings.
-  1. Change Locale, set up language and regional settings, for Germany e.g. choose `de_DE.UTF-8 UTF-8` (type Space to get a star there).
+  1. Change Locale, set up language and regional settings, for Germany e.g. choose "de_DE.UTF-8 UTF-8" (type Space to get a star there).
   1. Change Timezone, set up timezone to match your location.    
   1. Change Keyboard Layout, set the keyboard layout to match to your own, for Querz find a generic keyboard with 105 keys and choose German.
 1. Enable Camera, nothing to do.
@@ -61,8 +62,9 @@ It is a good idea to configure the Raspberry Pi to your needs. The first basic c
 1. Advanced Options 
   1. Memory Split. Set to 16.
   1. Update, recommended
-Back at the raspi-config home screen click “finish” (2x Tab)  
-reboot your Raspberry Pi with `$ sudo reboot`
+
+Back at the raspi-config home screen click “finish” (2x Tab).  
+Reboot your Raspberry Pi with `$ sudo reboot`.
 
 #### update
 After the reboot make sure your Raspberry Pi is up-to-date. You will require Internet connection for this!
