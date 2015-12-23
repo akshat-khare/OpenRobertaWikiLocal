@@ -17,7 +17,7 @@ you can get more information [here](https://www.raspberrypi.org/documentation/se
 The README site from Raspberry Pi 2 provides you all necessary information to download, extract and install the image to an SD card: [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
 There are 3 possibilities to get a raspian image
-* NOOBS easy installer for Raspbian (and others). Use this, if you have no keyboard or monitor available -> see headless installation
+* NOOBS easy installer for Raspbian (and others). Use this, if you have no keyboard/mouse or monitor available -> see headless installation
 * NOOBS Lite network installer for Raspbian (and others)
 * RASPBIAN  
  
@@ -46,13 +46,14 @@ Password: raspberry
 It is a good idea to configure the Raspberry Pi to your needs. The first basic configuration can be done via the Raspberry Pi configuration  tool, for detailed information have a look [here](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
 
 #### raspi-config settings
-`$ sudo raspi-config` 
+`$ sudo raspi-config`   
+You can easily jump between the menu items with the up and down arrow keys. To select, finish or ok press the right or levt arrow keys or use the Tab key.
  
 1. Expand Filesystem, to make sure there is enough space on your SD card (NOOPS users' file system is expanded automatically during installation).
 1. Change User Password, if you want to (recommended). The username will still be pi.
 1. Boot Options, nothing to do.
 1. Wait for Network at Boot, nothing to do.
-1. Internationalisation Options, recommended (NOOPS Lite seems to have the correct settings.
+1. Internationalisation Options, recommended (NOOPS Lite seems to have the correct settings).
   1. Change Locale, set up language and regional settings, for Germany e.g. choose "de_DE.UTF-8 UTF-8" (type Space to get a star there).
   1. Change Timezone, set up timezone to match your location.    
   1. Change Keyboard Layout, set the keyboard layout to match to your own, for Querz find a generic keyboard with 105 keys and choose German.
