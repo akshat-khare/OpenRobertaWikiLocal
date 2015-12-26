@@ -110,15 +110,34 @@ or
 `$ wget https://github.com/OpenRoberta/robertalab/archive/master.zip`  
 ... this might take a while ...    
 `$ unzip master.zip`  
-`$ rm master.zip`
+`$ rm master.zip`  
 `$ cd robertalab-master`
 
-### build the application:   
+### Build the application
 `$ cd OpenRobertaParent`   
 `$ mvn clean install -DskipTests`   
-... this might also take a while ...
+... this might also take a long while ...
+```
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] RobertaParent ...................................... SUCCESS [ 52.037 s]
+[INFO] Resources .......................................... SUCCESS [  0.059 s]
+[INFO] OpenRobertaShared .................................. SUCCESS [04:30 min]
+[INFO] OpenRobertaRuntime ................................. SUCCESS [01:48 min]
+[INFO] EV3Menu ............................................ SUCCESS [ 28.291 s]
+[INFO] OpenRobertaRobot ................................... SUCCESS [05:27 min]
+[INFO] OpenRobertaServer .................................. SUCCESS [02:58 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16:08 min
+[INFO] Finished at: 2015-12-26T18:08:29+01:00
+[INFO] Final Memory: 38M/104M
+[INFO] ------------------------------------------------------------------------
+```
   
-start the server:
+## Start/Stop the Server
 `$ cd ..`   
 `$ ./ora.sh --start`
 Usually the whole proccess is logged on the screen. However, if you want to save your logs to a file this is how you do it:   
