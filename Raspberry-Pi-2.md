@@ -70,43 +70,51 @@ Reboot your Raspberry Pi with `$ sudo reboot`.
 #### Update the System
 After the reboot make sure your Raspberry Pi is up-to-date. You will require internet connection for this!   
 `$ sudo apt-get update` update the list of available packages  
-`$ sudo apt-get upgrade` update the packages  
-`$ sudo rpi-update` update the kernel  
+`$ sudo apt-get upgrade` update the packages   
 `$ sudo reboot`  
+
+## Wifi Access Point
+Configuring the Raspberry Pi as an wireless access point is very helpful for our purposes. At the end you will have an all-in-one device as a classroom setup to program robots with the Open Roberta Lab. If you have a wireless router on hand and would like to use it you can skip this step.
+
+Configuring the Raspberry Pi as a wireless access point and router takes some time. Please check out the instructions and explanations on http://jankarres.de/2015/06/raspberry-pi-wlan-access-point-einrichten/. They are great and work with
+* Edimax EW-7811Un 150Mbps 11n Wi-Fi USB Adapter
+* Lb-link 150mbps Mini USB 802.11n/g/b Wireless Adapter with Antenna
 
 ## Installing the Open Roberta Server
 ### Requirements
 Requirements to install the Server on your Raspberry Pi:
 * Git: preinstalled
 * JDK: `$ sudo apt-get install openjdk-7-jdk`
-* Maven: `$ sudo apt-get install maven`
+* Maven:   
+  `$ wget http://ftp.halifax.rwth-aachen.de/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz`   
+  `$ sudo tar -xzvf /path/to/apache-maven-3.3.9-bin.tar.gz`   
+  `$ sudo mv apache-maven-3.3.9 /opt/`   
+  `$ sudo nano /etc/profile.d/maven.sh`   
+  edit the file so it looks like this:    
+  `export M2_HOME=/opt/apache-maven-3.3.9`  
+  `export PATH=$PATH:$M2_HOME/bin`  
+   quit and save, then logout and log back in.
 
-Sometimes you may experience conflicts with the maven version you get with "apt-get" This is the alternative installation, which will install version 3.2.5 on the Raspberry Pi
-```
-$ wget http://www.mirrorservice.org/sites/ftp.apache.org/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz
-$ sudo tar -xzvf /path/to/apache-maven-3.2.5-bin.tar.gz
-$ sudo mv apache-maven-3.2.5 /opt/
-$ sudo nano /etc/profile.d/maven.sh
-```
-edit the file so it looks like this:
-```
-export M2_HOME=/opt/apache-maven-3.2.5
-export PATH=$PATH:$M2_HOME/bin 
-```
-quit and save, then logout and log back in
+Create a directory for the Open Roberta Lab:  
+`$ mkdir OpenRobert` e.g.   
+`$ cd OpenRoberta`   
 
-### Install via Git
-Next you clone your directory   
+### Get the sources via Git
+Clone the sources     
 `$ git clone https://github.com/OpenRoberta/robertalab.git`     
-... this might take a while ...   
+... this might take a while ...  
+`$ cd robertalab`  
 
-check the branches   
-`$ cd robertalab/`  
-`$ git branch`   
-`*master`
+or   
+### Get the sources via download (faster)
+`$ wget https://github.com/OpenRoberta/robertalab/archive/master.zip`  
+... this might take a while ...    
+`$ unzip master.zip`  
+`$ rm master.zip`
+`$ cd robertalab-master`
 
-build the application:   
-`$ cd /OpenRobertaParent`   
+### build the application:   
+`$ cd OpenRobertaParent`   
 `$ mvn clean install -DskipTests`   
 ... this might also take a while ...
   
@@ -122,10 +130,5 @@ stop the server:
 or if your server is running in the background:   
 `ps -e|grep java`
 
-## Wifi Access Point
-Configuring the Raspberry Pi as an wireless access point is very helpful for our purposes. At the end you will have an all-in-one device as a classroom setup to program robots with the Open Roberta Lab. If you have a wireless router on hand and would like to use it you can skip this step.
 
-Configuring the Raspberry Pi as a wireless access point and router takes some time. Please check out the instructions and explanations on http://jankarres.de/2015/06/raspberry-pi-wlan-access-point-einrichten/. They are great and work with
-* Edimax EW-7811Un 150Mbps 11n Wi-Fi USB Adapter
-* Lb-link 150mbps Mini USB 802.11n/g/b Wireless Adapter with Antenna
 
