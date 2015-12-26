@@ -1,8 +1,7 @@
 ### What you need
 * Java JDK 1.7, 1.8 will **not** work currently
 * Maven 3.2.x, 3.3.3 works fine
-  * for Linux users:  
-    `wget http://ftp.halifax.rwth-aachen.de/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz`
+
 ### Get robertalab
 * clone the repository with `git clone https://github.com/OpenRoberta/robertalab.git`   
   or   
