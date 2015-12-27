@@ -99,21 +99,21 @@ Create a directory for the Open Roberta Lab:
 `$ mkdir OpenRobert` e.g.   
 `$ cd OpenRoberta`   
 
-### Get the sources via Git
+### Get the Sources via Git
 Clone the sources     
 `$ git clone https://github.com/OpenRoberta/robertalab.git`     
 ... this might take a while ...  
 `$ cd robertalab`  
 
 or   
-### Get the sources via download (faster)
+### Get the Sources via Download (faster)
 `$ wget https://github.com/OpenRoberta/robertalab/archive/master.zip`  
 ... this might take a while ...    
 `$ unzip master.zip`  
 `$ rm master.zip`  
 `$ cd robertalab-master`
 
-### Build the application
+### Build the Application
 `$ cd OpenRobertaParent`   
 `$ mvn clean install -DskipTests`   
 ... this might also take a long while ...
@@ -136,18 +136,28 @@ or
 [INFO] Final Memory: 38M/104M
 [INFO] ------------------------------------------------------------------------
 ```
+`$ cd ..`
   
 ## Start/Stop the Server
-`$ cd ..`   
-`$ ./ora.sh --start`
-Usually the whole proccess is logged on the screen. However, if you want to save your logs to a file this is how you do it:   
+The start script for the server checks for a 64 bit Java version. We have to deactivate this test to use the script:   
+`$ sudo nano ora.sh`   
+find the line with   
+`_checkJava;`   
+add a # in front that it looks like   
+`#  _checkJava;`  
+save and quit.
+   
+`$ ./ora.sh --start` starts the server  
+Usually the whole process is logged on the screen. However, if you want to save your logs to a file start the server with      
 `./ora.sh --start > log.txt &`  
 The process will then run in the background and all system messages will be written in the textfile log.txt.
 
-stop the server:
-`Ctrl` + `c`   
-or if your server is running in the background:   
-`ps -e|grep java`
+
+`Ctrl` + `c` stops the server  
+or if your server is running in the background find the process id with     
+`$ pidof java`  
+`1385` e.g.  
+`$ kill 1385` stops the server
 
 
 
