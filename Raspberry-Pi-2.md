@@ -46,7 +46,7 @@ It is a good idea to configure the Raspberry Pi to your needs. The first basic c
 ####  Raspberry Pi Configuration
 Open a terminal or log in via ssh.  
 `$ sudo raspi-config` starts the configuration tool.     
-You can easily jump between the menu items with the up and down arrow keys. To select, finish or ok press the right or levt arrow keys or use the Tab key.
+You can easily jump between the menu items with the up and down arrow keys. To select, finish or ok press the right or left arrow keys or use the Tab key.
  
 1. Expand Filesystem, to make sure there is enough space on your SD card (NOOPS users' file system is expanded automatically during installation).
 1. Change User Password, if you want to (recommended). The username will still be pi.
