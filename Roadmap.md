@@ -5,8 +5,25 @@
     <th>started</th>
     <th>ready to release</th>
     <th>released</th>
-  </tr>
-<tr>
+  </tr><tr>
+    <td>USBprogram update, error fixes, feedback button, update checker</td>    
+    <td>started</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td>Refactoring Popups for better usablility</td>    
+    <td>started</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td>USBprogram update, error fixes, feedback button, update checker</td>    
+    <td>started</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr><tr>
     <td bgcolor="#FFF550">Check program before running</td>    
     <td  bgcolor="#00ffff"></td>
 <td></td>
