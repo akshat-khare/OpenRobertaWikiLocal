@@ -62,6 +62,24 @@
     <td>ready</td>
 <td></td>
   </tr><tr>
+    <td>Separate database</td>
+    <td>planned</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td>Versioning Open Roberta Lab and robot systems</td>
+    <td>planned</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td>Refactoring datatables with bootstrap</td>
+    <td>planned</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr><tr>
     <td>Restructure / reorder GUI</td>
     <td bgcolor="#00ffff">planned</td>
     <td></td>
