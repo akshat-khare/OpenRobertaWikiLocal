@@ -31,23 +31,16 @@
     <td bgcolor="#00ffff">started</td>
     <td></td>
 <td></td>
-  </tr>
-<tr>
-    <td>Restructure / reorder GUI</td>
-    <td bgcolor="#00ffff">planned</td>
-    <td></td>
-    <td></td>
-<td></td>
-  </tr>
+  </tr><tr>
     <td>Refactoring Popups for better usablility</td>    
-    <td>started</td>
     <td></td>
+    <td>started</td>
     <td></td>
     <td></td>
   </tr><tr>
     <td>USBprogram update, error fixes, feedback button, update checker</td>    
-    <td>started</td>
     <td></td>
+    <td>started</td>
     <td></td>
     <td></td>
   </tr><tr>
@@ -61,6 +54,12 @@
     <td bgcolor="#FFF550">Add multiple robots</td>
     <td  bgcolor="#00ffff"></td>
 <td bgcolor="#00ffff">started</td>
+    <td></td>
+<td></td>
+  </tr><tr>
+    <td>Restructure / reorder GUI</td>
+    <td bgcolor="#00ffff">planned</td>
+    <td></td>
     <td></td>
 <td></td>
   </tr><tr>
