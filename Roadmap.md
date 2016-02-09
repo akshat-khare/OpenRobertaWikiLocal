@@ -44,6 +44,12 @@
     <td></td>
     <td></td>
   </tr><tr>
+    <td bgcolor="#FFF550">Add multiple robots</td>
+    <td  bgcolor="#00ffff"></td>
+<td bgcolor="#00ffff">started</td>
+    <td></td>
+<td></td>
+  </tr><tr>
     <td bgcolor="#FFF550">Check program before running</td>    
     <td  bgcolor="#00ffff"></td>
 <td></td>
@@ -51,12 +57,6 @@
 <td></td>
   </tr>
   <tr>
-    <td bgcolor="#FFF550">Add multiple robots</td>
-    <td  bgcolor="#00ffff"></td>
-<td bgcolor="#00ffff">started</td>
-    <td></td>
-<td></td>
-  </tr><tr>
     <td>Restructure / reorder GUI</td>
     <td bgcolor="#00ffff">planned</td>
     <td></td>
