@@ -55,8 +55,13 @@
 <td></td>
     <td>ready</td>
 <td></td>
-  </tr>
-  <tr>
+  </tr><tr>
+    <td bgcolor="#FFF550">Support password recovery</td>    
+    <td  bgcolor="#00ffff"></td>
+<td></td>
+    <td>ready</td>
+<td></td>
+  </tr><tr>
     <td>Restructure / reorder GUI</td>
     <td bgcolor="#00ffff">planned</td>
     <td></td>
