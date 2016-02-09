@@ -7,8 +7,8 @@
     <th>released</th>
   </tr><tr>
     <td>USBprogram update, error fixes, feedback button, update checker</td>    
-    <td>started</td>
     <td></td>
+    <td>started</td>
     <td></td>
     <td></td>
   </tr><tr>
@@ -63,16 +63,7 @@
 <td bgcolor="#00ffff">started</td>
     <td></td>
 <td></td>
-  </tr>
-<tr>
-    <td>Move the repository to GitHub</td>
-    <td bgcolor="#00ffff"></td>
-    <td bgcolor="#00ffff"></td>
-    <td></td>
-<td>released</td>
   </tr><tr>
-
-<tr>
     <td bgcolor="#FFF550">Support profile update, social login, recover password, etc</td>
     <td bgcolor="#00ffff">planned</td>
     <td></td>
@@ -231,8 +222,13 @@
     <td></td>
     <td></td>
 <td></td>
-  </tr>
-<tr>
+  </tr><tr>
+    <td>Move the repository to GitHub</td>
+    <td bgcolor="#00ffff"></td>
+    <td bgcolor="#00ffff"></td>
+    <td></td>
+<td>released</td>
+  </tr><tr>
     <td>Simulation – provide an animated robot executing the program for users without a real robot, prototyping etc. </td>
     <td bgcolor="#58FA82"></td>
     <td bgcolor="#58FA82"></td>
