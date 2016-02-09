@@ -12,6 +12,33 @@
     <td></td>
     <td></td>
   </tr><tr>
+    <td>Update / Sync to latest Blockly version</td>
+    <td bgcolor="#00ffff"></td>
+    <td bgcolor="#00ffff">started</td>
+    <td></td>
+<td></td>
+  </tr>
+<tr>
+    <td>Rewrite JavaScript to TypeScript / use RequireJS</td>
+    <td bgcolor="#00ffff"></td>
+    <td bgcolor="#00ffff">started</td>
+    <td></td>
+<td></td>
+  </tr>
+<tr>
+    <td>Refactor robot server projects</td>
+   <td bgcolor="#00ffff"></td>
+    <td bgcolor="#00ffff">started</td>
+    <td></td>
+<td></td>
+  </tr>
+<tr>
+    <td>Restructure / reorder GUI</td>
+    <td bgcolor="#00ffff">planned</td>
+    <td></td>
+    <td></td>
+<td></td>
+  </tr>
     <td>Refactoring Popups for better usablility</td>    
     <td>started</td>
     <td></td>
@@ -43,35 +70,8 @@
     <td bgcolor="#00ffff"></td>
     <td></td>
 <td>released</td>
-  </tr>
-<tr>
-    <td>Update / Sync to latest Blockly version</td>
-    <td bgcolor="#00ffff"></td>
-    <td bgcolor="#00ffff">started</td>
-    <td></td>
-<td></td>
-  </tr>
-<tr>
-    <td>Rewrite JavaScript to TypeScript / use RequireJS</td>
-    <td bgcolor="#00ffff"></td>
-    <td bgcolor="#00ffff">started</td>
-    <td></td>
-<td></td>
-  </tr>
-<tr>
-    <td>Refactor robot server projects</td>
-   <td bgcolor="#00ffff"></td>
-    <td bgcolor="#00ffff">started</td>
-    <td></td>
-<td></td>
-  </tr>
-<tr>
-    <td>Restructure / reorder GUI</td>
-    <td bgcolor="#00ffff">planned</td>
-    <td></td>
-    <td></td>
-<td></td>
-  </tr>
+  </tr><tr>
+
 <tr>
     <td bgcolor="#FFF550">Support profile update, social login, recover password, etc</td>
     <td bgcolor="#00ffff">planned</td>
