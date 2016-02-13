@@ -27,7 +27,7 @@ If you don't have a monitor and/or mouse and keyboard on hand, download [NOOBS e
 Add ` silentinstall` at the end of the first (and only) line, so that it looks like this   
 `runinstaller quiet ramdisk_size=32768 root=/dev/ram0 init=/init vt.cur_default=1 elevator=deadline silentinstall` [(Paul Lunow)](http://www.interaktionsdesigner.de/2014/raspberry-pi-ohne-monitor-tastatur-und-maus-in-betrieb-nehmen/)
 
-Plug in the network and power cable. After the first boot (ca. 30 min, only the red LED is on) your Raspberry Pi will be visible in your routers DHCP table as raspberry. You can now easily log in to your raspberry via ssh from any computer/laptop in your local network.
+Plug in the network and power cable. After the first boot (ca. 30 min) your Raspberry Pi will be visible in your routers DHCP table as raspberry. You can now easily log in to your raspberry via ssh from any computer/laptop in your local network.
 
 
 
