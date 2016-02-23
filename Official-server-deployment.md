@@ -1,4 +1,4 @@
-These informations are for Beate or the guy who is deploying the system on the official server.
+These information are for Beate or the guy who is deploying the system on the official server.
 Run the build with the deployment profile in maven:
 
 maven clean install -P deployofficialserver
