@@ -19,7 +19,18 @@ The most important thing in this system is to identify, which robot belongs to w
 ## Data exchange
 The robot and the server are using JsonObjects to exchange information. An example:
 
-{"firmwarename":"lejos","macaddr":"74-DA-38-28-9F-A6","cmd":"register","firmwareversion":"0.9.0-beta","token":"AMKAQM23","brickname":"EV3","battery":"8.4","menuversion":"1.3.0"}
+```json
+{
+  "firmwarename":"lejos",
+  "macaddr":"74-DA-38-28-9F-A6",
+  "cmd":"register",
+  "firmwareversion":"0.9.0-beta",
+  "token":"AMKAQM23",
+  "brickname":"EV3",
+  "battery":"8.4",
+  "menuversion":"1.3.0"
+}
+```
 
 Note: It turns out that these information are not general enough for different robot types. Please suggest more fields or different field names to better describe the robot system. We want to make some changes in the protocol in Version 2.0 anyway.
 
