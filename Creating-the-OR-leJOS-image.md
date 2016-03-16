@@ -7,5 +7,5 @@ cd Resources/image
 sudo sh CreateImage.sh 1.4.0
 ```
 
-This will download the original leJOS files and modify the image. You will get a file named OpenRobertaFirmware-<version>-release.zip next to the script.
+This will download the original leJOS files and modify the image. You will get a file named OpenRobertaFirmware-\<version\>-release.zip next to the script.
 The script is only for Linux!!
