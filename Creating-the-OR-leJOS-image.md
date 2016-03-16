@@ -2,7 +2,10 @@ To create a new Open Roberta leJOS image, run maven install on the project first
 Afterwards run ```CreateImage.sh``` in ```<repo>/Resources/image```
 You can pass a parameter to the script as the version number, default version is 1.3.2. Example:
 
-```sudo sh CreateImage.sh 1.4.0```
+```
+cd Resources/image
+sudo sh CreateImage.sh 1.4.0
+```
 
 This will download the original leJOS files and modify the image. You will get a file named OpenRobertaFirmware-<version>-release.zip next to the script.
 The script is only for Linux!!
