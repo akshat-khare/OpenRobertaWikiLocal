@@ -16,3 +16,4 @@
   * [[Eclipse]]
 * [[Robot-Server Protocol]]
 * [[Official server deployment]]
+* [[Creating the OR leJOS image]]
