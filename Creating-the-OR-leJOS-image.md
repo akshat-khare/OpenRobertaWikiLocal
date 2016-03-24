@@ -1,4 +1,5 @@
 Requirements: A computer with a Linux(!) operating system, internet connection
+
 To create a new Open Roberta leJOS image, run maven install on the project first, to have all dependencies available in the correct places.
 
 ```
