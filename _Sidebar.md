@@ -12,6 +12,7 @@
 * [[Info]]
 * [[Get Started]]
   * [[Git]]
+  * [[Git Workflow]]
   * [[Maven]]
   * [[Eclipse]]
 * [[Robot-Server Protocol]]
