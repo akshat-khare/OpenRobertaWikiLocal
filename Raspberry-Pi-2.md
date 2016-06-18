@@ -136,18 +136,10 @@ or
 ```
 `$ cd ..`
   
-## Start/Stop the Server
-The start script for the server checks for a 64 bit Java version. We have to deactivate this test to use the script:   
-`$ sudo nano ora.sh`   
-find the line with   
-`_checkJava;`   
-add a # in front that it looks like   
-`#  _checkJava;`  
-save and quit.
-   
-`$ ./ora.sh --start` starts the server  
+## Start/Stop the Server 
+`$ ./ora.sh --start-server` starts the server  
 Usually the whole process is logged on the screen. However, if you want to save your logs to a file start the server with      
-`./ora.sh --start > log.txt &`  
+`nohup ./ora.sh --start-server > log.txt &`  
 The process will then run in the background and all system messages will be written in the textfile log.txt.
 
 
