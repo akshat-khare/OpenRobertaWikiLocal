@@ -2,7 +2,7 @@
 
 ## First time setup for System and WiFi router
 
-In addition to your Raspberry Pi 2 and a [micro SD card] (https://www.raspberrypi.org/documentation/installation/sd-cards.md) for the system you will need:
+In addition to your Raspberry Pi 2 / 3 and a [micro SD card] (https://www.raspberrypi.org/documentation/installation/sd-cards.md) for the system you will need:
 * micro USB-cable (power cable)
 * ethernet cable
 * USB wifi adaper
@@ -119,21 +119,26 @@ or
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO]
-[INFO] RobertaParent ...................................... SUCCESS [ 52.037 s]
-[INFO] Resources .......................................... SUCCESS [  0.059 s]
-[INFO] OpenRobertaShared .................................. SUCCESS [04:30 min]
-[INFO] OpenRobertaRuntime ................................. SUCCESS [01:48 min]
-[INFO] EV3Menu ............................................ SUCCESS [ 28.291 s]
-[INFO] OpenRobertaRobot ................................... SUCCESS [05:27 min]
-[INFO] OpenRobertaServer .................................. SUCCESS [02:58 min]
+[INFO] RobertaParent ...................................... SUCCESS [01:00 min]
+[INFO] Resources .......................................... SUCCESS [  1.118 s]
+[INFO] OpenRobertaShared .................................. SUCCESS [01:15 min]
+[INFO] OpenRobertaRuntime ................................. SUCCESS [ 25.575 s]
+[INFO] EV3Menu ............................................ SUCCESS [ 46.559 s]
+[INFO] OpenRobertaRobot ................................... SUCCESS [08:30 min]
+[INFO] OpenRobertaServer .................................. SUCCESS [25:53 min]
+[INFO] OpenRobertaUSB ..................................... SUCCESS [ 51.508 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 16:08 min
-[INFO] Finished at: 2015-12-26T18:08:29+01:00
-[INFO] Final Memory: 38M/104M
+[INFO] Total time: 38:54 min
+[INFO] Finished at: 2016-06-19T12:07:33+00:00
+[INFO] Final Memory: 33M/95M
 [INFO] ------------------------------------------------------------------------
+Total time: 38:54 min
+Finished at: 2016-06-19T12:07:33+00:00
+Final Memory: 33M/95M
 ```
+
 `$ cd ..`
   
 ## Start/Stop the Server 
