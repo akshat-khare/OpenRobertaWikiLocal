@@ -11,10 +11,12 @@
 **Development**
 * [[Info]]
 * [[Get Started]]
-  * [[Git]]
   * [[Git Workflow]]
-  * [[Maven]]
-  * [[Eclipse]]
-* [[Robot-Server Protocol]]
-* [[Official server deployment]]
-* [[Creating the OR leJOS image]]
+  * [[Eclipse setup]]
+* Architecture
+  * [[Robot-Server Protocol]]
+  * [[Plugin Structure for Robots]]
+* How tos
+  * [[Creating the OR leJOS image]]
+  * [[Official server deployment]]
+  * [[Raspberry Pi 2 - 3]]
