@@ -2,21 +2,18 @@
 
 **Installation**
 * [[Windows/Mac OS X /Linux|Installation]]
-* [[Raspberry Pi 2]]
+* [[Raspberry Pi 2 - 3]]
 * [[EV3 and leJOS]]
 * [[EV3 and ev3dev]]
+* [[Creating the OR leJOS image]]
+* [[Official server deployment]]
 
 **[[Roadmap]]**
 
 **Development**
-* [[Info]]
-* [[Get Started]]
+* Get Started
   * [[Git Workflow]]
   * [[Eclipse setup]]
 * Architecture
   * [[Robot-Server Protocol]]
   * [[Plugin Structure for Robots]]
-* How tos
-  * [[Creating the OR leJOS image]]
-  * [[Official server deployment]]
-  * [[Raspberry Pi 2 - 3]]
