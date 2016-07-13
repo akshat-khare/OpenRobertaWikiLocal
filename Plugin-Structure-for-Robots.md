@@ -25,19 +25,21 @@ Some notes:
 
 When the server starts (class ServerStarter), the openRoberta.properties file is read.
 In this file all robots available have to be declared. E.g.
-'''
+```
 robot.plugin.1.name = ev3
 robot.plugin.1.id = 42
 robot.plugin.1.factory = de.fhg.iais.roberta.factory.EV3Factory
-'''
+```
 From this data a Map<String,IRobotFactory> is build and made available for guice. If a robot is added to OpenRoberta,
 the property file has to be changed.
 
->> The _id_ is annoying. But to remove it, some further refactorings which touch the database are needed **Help wanted**
+>> The _id_ is annoying. But to remove it, some further refactorings which touch the database are needed
+>> **Help wanted**
 
 >> The robots could/should be auto-discovered. There are several solutions (hibernate, jersey, stack-overflow, ... :-).
 >> The java reflection API does not support it. Thus there is no solution agreed by a larger community.
->> Do you have proposals for auto-discovery (frameworks)? **Help wanted**
+>> Do you have proposals for auto-discovery (frameworks)?
+>> **Help wanted**
 
 # IRobotFactory
 
@@ -53,13 +55,13 @@ AbstractRobotFactory). The following assumptions are made:
     + modes for a specific sensor (e.g. ColorSensor modes) and actors
     + and more
 * in the robot plugin project (e.g. RobotEv3) each enumeration (e.g. ColorSensorMode) is defined:
-'''
+```
 public enum ColorSensorMode implements IColorSensorMode {
     COLOUR( "getColorSensorColour", "ColorID" ),
     RED( "getColorSensorRed", "Red" ),
     RGB( "getColorSensorRgb", "RGB" ),
     AMBIENTLIGHT( "getColorSensorAmbient", "Ambient" );
-'''
+```
 * each enumeration implements an interface defined in OpenRobertaProject (e.g. IColorSensorMode).
   Only the set of these interfaces is used by the server. Thus the server becomes independant of the concrete robots.
 
