@@ -51,8 +51,10 @@ From server to robot
 
 ## Registration of a robot
 By using the command "register in the "cmd" field in the JsonObject, the server will hold the connection for approximately 5 minutes. In this time, the user has to enter the token on the web page to pair the client with the robot. In case of success, the server will return a JsonObject with "repeat" in the "cmd" field. Otherwise, if no one types in the token within five minutes, the server will answer the request from the robot by returning "abort". The robot can reuse this token trying to connect again or it generates a new one.
+
 ## Pushrequests
 If the registration was successful and the robot receives a "repeat" from the server, the robot will send the very same JsonObject from the registration again to the server. However, the "cmd" field's value is now "push". This basically is a notification, that the robot is still alive and online. The push request will be answered by the server roughly every 10 seconds with a "repeat". Keep in mind, if the name of the robot or the battery voltage changes, the fields in the JsonObject should also be updated, therefor the server will always receive up-to-date informations.
+
 ## Downloading and running a NEPO program
 As already stated, responsiveness of the system is very important. The user should be able to run the program on the robot just by clicking the "run" button on the web page. By doing so, the server will answer the pending push request immediately by sending the command "download" instead of "repeat". This induces the robot to download the program from the server by sending a push request ("push" command) to the/rest/download rest interface. The file is transfered as binary content, the file name is set in the header field "Filename". After downloading the file, the program is executed immediately.
 
@@ -60,11 +62,27 @@ Important: While running a user program on the robot, there is no communication 
 ## Disconnecting the robot
 The push requests tell the server, that the robot is alive and connected to Open Roberta Lab. If a push request was answered but the following one is missing, the brick is considered as offline/ disconnected after several seconds by the server. In case of heavy lagspikes in the network, it can occur, that the robot loses the connection to Open Roberta Lab. There is no explicit disconnect function needed.
 Disconnecting the robot after downloading the user program: The server will consider the robot as running a program for a long time. This state does not change until the next push request arrives.
+
 ## Updating firmware
 As development continues, most likely there are library and system updates for the robot. Because reinstalling the firmware (on a micro SD-card for example) is time consuming and not trivial, Open Roberta Lab is able to provide the necessary files as a download for the robot system. The version number of the robot is compared to the version number from the server everytime a new robot is connected to Open Roberta Lab by a token and before running a program. If the user decides to update the firmware, the server answers the push request with an "update" command. This issues the robot to download all files from /rest/update/<filename>. At this point, the robot is no longer connected to Open Roberta Lab. To download the files, http GET method is used. The robot does not need to send any information about itself for downloading the files. The filename is available in the header field "Filename".
 Usually, to take benefit of the new files, the robot system has to reboot or it has to restart some parts of the system (for example the menu on the EV3). After that, the robot is able to register with Open Roberta Lab again.
+
 ## Nepo Exit Value
 There is a new field nepoexitvalue in the push protocol, which provides informations about running nepo programs, especially if they fail to execute. In case of leJOS EV3, 0 is fine, 143 is killed by the menu, 1 classloading errors and so on. This field is not mandatory for the registration but can be added later after a nepo program was executed the first time. How to react on different exit codes must be programmed in the javascript client (e. g. popup for the user with a message).
+
 ## Additional information
 Because of firewall restrictions of routers and operating system, it is important that the connection is initiated from the "correct" side. For example, the server will not be able to access a robot device which is behind a router (unless you manually open some ports). Therefor it is important to let the robot initiate the connection. If there are helper programs for USB on Windows, similar thinks have to be kept in mind. In case of helper programs for USB, it is a good idea to have some robot test requests, to check, if a program is currently running or not. This kind of functionality can be used specifically for individual robot systems.
 Our Lego EV3 firmware (based on leJOS as well as ev3dev) both are using a network emulation for the USB connection. This enables the use of Http connections via USB to keep it "high level" and simple.
+
+## Sensor logging
+In addition ev3@lejos can send sensor data either to a websocket or as a fallback to a special rest address.
+The sensor messages look like this:
+```json
+{
+  "token":"AMKAQM23",
+  "1-<sensor-name>":"<value>"
+  "2-<sensor-name>":"<value>"
+  "A-<motor-name>":"<value>"
+}
+```
+The fields starting with numbers are sensors, the fields starting with letters are motor positions for motors that can report them.
