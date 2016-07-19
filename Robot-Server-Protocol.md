@@ -80,8 +80,8 @@ The sensor messages look like this:
 ```json
 {
   "token":"AMKAQM23",
-  "1-<sensor-name>":"<value>"
-  "2-<sensor-name>":"<value>"
+  "1-<sensor-name>":"<value>",
+  "2-<sensor-name>":"<value>",
   "A-<motor-name>":"<value>"
 }
 ```
