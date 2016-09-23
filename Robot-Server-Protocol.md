@@ -68,7 +68,12 @@ As development continues, most likely there are library and system updates for t
 Usually, to take benefit of the new files, the robot system has to reboot or it has to restart some parts of the system (for example the menu on the EV3). After that, the robot is able to register with Open Roberta Lab again.
 
 ## Nepo Exit Value
-There is a new field nepoexitvalue in the push protocol, which provides informations about running nepo programs, especially if they fail to execute. In case of leJOS EV3, 0 is fine, 143 is killed by the menu, 1 classloading errors and so on. This field is not mandatory for the registration but can be added later after a nepo program was executed the first time. How to react on different exit codes must be programmed in the javascript client (e. g. popup for the user with a message).
+There is a new field nepoexitvalue in the push protocol, which provides informations about running nepo programs, especially if they fail to execute:
+  * 0: the program executed fine
+  * 1: class loading error (lejos ev3)
+  * ...
+  * 143: program was killed from the ui
+This field is not mandatory for the registration but can be added later after a nepo program was executed the first time. How to react on different exit codes must be programmed in the javascript client (e. g. popup for the user with a message).
 
 ## Additional information
 Because of firewall restrictions of routers and operating system, it is important that the connection is initiated from the "correct" side. For example, the server will not be able to access a robot device which is behind a router (unless you manually open some ports). Therefor it is important to let the robot initiate the connection. If there are helper programs for USB on Windows, similar thinks have to be kept in mind. In case of helper programs for USB, it is a good idea to have some robot test requests, to check, if a program is currently running or not. This kind of functionality can be used specifically for individual robot systems.
