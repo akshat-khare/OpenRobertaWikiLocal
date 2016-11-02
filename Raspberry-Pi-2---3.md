@@ -99,7 +99,7 @@ Create a directory for the Open Roberta Lab:
 
 ### Get the Sources via Git
 Clone the sources     
-`$ git clone --depth 1 https://github.com/OpenRoberta/robertalab.git`
+`$ git clone --depth 1 https://github.com/OpenRoberta/robertalab.git`  
 ... this might take a while (--depth 1 skips the git history already) ...  
 `$ cd robertalab`  
 
