@@ -1,3 +1,5 @@
+**[[Roadmap]]**
+
 **[[Community]]**
 
 **Installation**
@@ -7,8 +9,6 @@
 * [[EV3 and ev3dev]]
 * [[Creating the OR leJOS image]]
 * [[Official server deployment]]
-
-**[[Roadmap]]**
 
 **Development**
 * Get Started
