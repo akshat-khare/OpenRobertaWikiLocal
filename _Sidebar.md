@@ -1,5 +1,7 @@
 **[[Roadmap]]**
 
+**[[Google Summer of Code 2017]]**
+
 **[[Community]]**
 
 **Installation**
