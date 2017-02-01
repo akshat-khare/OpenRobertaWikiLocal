@@ -1,0 +1,3 @@
+We will apply for Google Summer of Code 2017.
+
+Keep your fingers crossed, that we got accepted ;-) ...
