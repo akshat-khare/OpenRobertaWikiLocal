@@ -2,6 +2,11 @@ We will apply for Google Summer of Code 2017.
 
 Keep your fingers crossed, that we get accepted ;-) ...
 
+## Application instructions
+Before you apply, please have a look at what we have already developed. Play around with our [lab](https://lab.open-roberta.org), fork the robertab repository and try to install and run it locally. Feel free to ask us for help.
+
+
+
 
 ## Support for custom sensor/actor blocks
 
