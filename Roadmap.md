@@ -1,5 +1,5 @@
 ## Vision
-The Open Roberta Lab is **the** platform to program robots and other intertesting things.
+The Open Roberta Lab is **the** platform to program robots and other interresting things, like microcontrollers or industrial robot arms.
 
 ## How to
 * Support many different interresting robot systems.
