@@ -3,8 +3,11 @@ We will apply for Google Summer of Code 2017.
 Keep your fingers crossed, that we get accepted ;-) ...
 
 ## Application instructions
-Before you apply, please have a look at what we have already developed. Play around with our [lab](https://lab.open-roberta.org), fork the robertab repository and try to install and run it locally. Feel free to ask us for help.
+Before you apply, please have a look at what we have already developed. Play around with our [lab](https://lab.open-roberta.org), fork the robertab repository and try to install and run it locally. Feel free to ask us for help, if necessary.
 
+If you have already committed to an Open Source project, please provide a link to this in your application. If you haven't, no problem, but maybe you can provide us some other samples of your programming experience. Also student's projects are welcome.
+
+Have a look at our list of proposals for GSOC. If you have another good idea, don't hesitate to come up with your own project proposal. Maybe you would like to discuss it with us before you apply, please use our communication channels, the google group or ...
 
 
 
