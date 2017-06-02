@@ -4,7 +4,7 @@ A lot of people, teachers and students, around the world have no good internet c
 You can install the Open Roberta Lab on several different systems. We recommend to install it on a linux system like ubunto, which is easy, but depending on what you want to use also windows or Mac OS X can be an alternative. So please read carefully what you have to install besides the Open Roberta Lab, maybe you don't need all of this.
 
 ### Get the Open Roberta Lab
-* download the binaries from the latest release [here](https://github.com/OpenRoberta/robertalab/releases). Please choose the latest embedded version `embedded_x.y.z`, which means the database is running in an embedded mode.  
+* download the binaries from the latest release [here](https://github.com/OpenRoberta/robertalab/releases). Please choose the latest embedded version `embedded_x.y.z.zip`, which means the database is running in an embedded mode.  
 
 License information is available here [https://github.com/OpenRoberta/robertalab/tree/master/Resources](https://github.com/OpenRoberta/robertalab/tree/master/Resources). Please read the file LICENCE and NOTICE carefully. If you have questions please contact us.
 
