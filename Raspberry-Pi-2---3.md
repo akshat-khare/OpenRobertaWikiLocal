@@ -94,7 +94,7 @@ Requirements to install the Server on your Raspberry Pi:
    quit and save, then logout and log back in.
 
 Create a directory for the Open Roberta Lab:  
-`$ mkdir OpenRobert` e.g.   
+`$ mkdir OpenRoberta` e.g.   
 `$ cd OpenRoberta`   
 
 ### Get the Sources via Git
