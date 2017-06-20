@@ -67,8 +67,8 @@ Reboot your Raspberry Pi with `$ sudo reboot`.
 
 #### Update the System
 After the reboot make sure your Raspberry Pi is up-to-date. You will require internet connection for this!   
-`$ sudo apt-get update` update the list of available packages  
-`$ sudo apt-get upgrade` update the packages   
+`$ sudo apt update` update the list of available packages  
+`$ sudo apt upgrade` update the packages   
 `$ sudo reboot`  
 
 ## Wifi Access Point
@@ -82,7 +82,7 @@ Configuring the Raspberry Pi as a wireless access point and router takes some ti
 ### Requirements
 Requirements to install the Server on your Raspberry Pi:
 * Git: preinstalled
-* JDK: `$ sudo apt-get install openjdk-7-jdk`
+* JDK: `$ sudo apt install openjdk-8-jdk`
 * Maven:   
   `$ wget http://ftp.halifax.rwth-aachen.de/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz`   
   `$ sudo tar -xzvf /path/to/apache-maven-3.3.9-bin.tar.gz`   
@@ -142,9 +142,9 @@ Final Memory: 33M/95M
 `$ cd ..`
   
 ## Start/Stop the Server 
-`$ ./ora.sh --start-server` starts the server  
+`$ ./ora.sh --start-from-git` starts the server  
 Usually the whole process is logged on the screen. However, if you want to save your logs to a file start the server with      
-`nohup ./ora.sh --start-server > log.txt &`  
+`nohup ./ora.sh --start-from-git > log.txt &`  
 The process will then run in the background and all system messages will be written in the textfile log.txt.
 
 
