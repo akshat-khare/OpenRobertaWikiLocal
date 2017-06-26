@@ -19,3 +19,6 @@
 * Architecture
   * [[Robot-Server Protocol]]
   * [[Plugin Structure for Robots]]
+* Blockly
+  * [[Adding new blockly block in frontend]]
+  * [[Connecting blockly block with java backend]]
