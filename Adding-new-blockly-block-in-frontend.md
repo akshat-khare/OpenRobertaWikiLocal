@@ -36,7 +36,8 @@ Blockly.Blocks['makeblockActions_leds_on'] = {
         this.setNextStatement(true);
         this.setTooltip(Blockly.Msg.LED_ON_TOOLTIP);
     }
-};`
+};
+`
 
 `Blockly.Blocks['makeblockActions_leds_on']` this starts a block definition, makeblockActions_leds_on is the blocklyu block name as it appears client side. One must provide init function in order for the block to be constructed. There is a number of predefined elements that could be used, like FieldDropdown or checkboxes. 
 
