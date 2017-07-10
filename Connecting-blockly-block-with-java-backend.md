@@ -2,8 +2,8 @@ In order to connect blockly blocks with java backend, two things are necessary, 
 
 From the robot properties file (found at Robot<Name>/src/main/properties):
 
-# block types, that are added by this robot. Syntax (for category, see enum Category):
-# blockType.<unique-name-of-the-block-type> = <category>,<full-path-of-implementing-class>,<blockly-xml-element-name-1>,...,<blockly-xml-element-name-n>
+`# block types, that are added by this robot. Syntax (for category, see enum Category):`
+`# blockType.<unique-name-of-the-block-type> = <category>,<full-path-of-implementing-class>,<blockly-xml-element-name-1>,...,<blockly-xml-element-name-n>`
 
 blockType.VOLTAGE_SENSING=SENSOR,de.fhg.iais.roberta.syntax.sensor.botnroll.VoltageSensor,robSensors_battery_voltage
 
