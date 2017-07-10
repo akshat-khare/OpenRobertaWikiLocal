@@ -5,7 +5,7 @@ makeblockActions.js is a small file that can serve as an exmaple:
 
 [MakeBlockActions](https://github.com/OpenRoberta/blockly/blob/master/blocks/makeblockActions.js)
 
-`Blockly.Blocks['makeblockActions_leds_on']` this starts a block definition, makeblockActions_leds_on is the blocklyu block name as it appears client side. One must provide init function in order for the block to be constructed. There is a number of predefined elements that could be used, like FieldDropdown or checkboxes. 
+`Blockly.Blocks['makeblockActions_leds_on']` this starts a block definition, makeblockActions_leds_on is the blockly block name as it appears client side. One must provide init function in order for the block to be constructed. There is a number of predefined elements that could be used, like FieldDropdown or checkboxes. 
 
 Play around with this simple block to see how it changes. You can observe the changes to the block by opening playgorund.html from 'tests' folder. If you have added a new javascript file, do not forget to modify the html page, so it would include your new script:
 
