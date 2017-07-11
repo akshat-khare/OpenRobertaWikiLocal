@@ -20,7 +20,7 @@ License information is available here [https://github.com/OpenRoberta/robertalab
     * `sudo apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude`
   * for NXT
     * `sudo apt-get install nbc`
- * for Calliope
-   * `sudo apt-get install gcc-arm-none-eabi srecord libssl-dev`
- * for micro:bit
-   * `pip install uflash`  
+  * for Calliope
+    * `sudo apt-get install gcc-arm-none-eabi srecord libssl-dev`
+  * for micro:bit
+    * `pip install uflash`  
