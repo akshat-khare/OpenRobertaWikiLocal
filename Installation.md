@@ -15,12 +15,12 @@ License information is available here [https://github.com/OpenRoberta/robertalab
 
 **Install now all the programms needed for compilation of code for the different supported robot systems, maybe you do not need all of them**
 * on linux systems (Ubuntu)
-** Arduino based robots
-*** `sudo apt-get install libusb-0.1-4`
-*** `sudo apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude`
-** for NXT
-*** `sudo apt-get install nbc`
-** for Calliope
-*** `sudo apt-get install gcc-arm-none-eabi srecord libssl-dev`
-** for micro:bit
-** `pip install uflash`
+ * Arduino based robots
+  * `sudo apt-get install libusb-0.1-4`
+  * `sudo apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude`
+ * for NXT
+  * `sudo apt-get install nbc`
+ * for Calliope
+  * `sudo apt-get install gcc-arm-none-eabi srecord libssl-dev`
+ * for micro:bit
+ * `pip install uflash`
