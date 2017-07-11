@@ -8,4 +8,9 @@ You can install the Open Roberta Lab on several different systems. We recommend 
 
 License information is available here [https://github.com/OpenRoberta/robertalab/tree/master/Resources](https://github.com/OpenRoberta/robertalab/tree/master/Resources). Please read the file LICENCE and NOTICE carefully. If you have questions please contact us.
 
-more shortly
+* extract the zip file and copy the content of the the embedded-x.y.z folder to your desired location, e.g. into a new folder "OpenRobertaLab". If this is your first installation please copy the empty database db-x.y.z into the same folder next to the other folders and scripts, if not, make sure the complete database folder from your previous version is copied into the same folder (or stays there).
+
+### Get the necessary programs / packages for your system, used by the Open Roberta server:
+* make sure that Java Runtime Environment (JRE) is available. Open a command prompt and type `java -version`, if it is already available then the output is something with `java version "1.8.a_b"`. It should be something with java version 1.8... otherwise check the oracle websites for how to get it.
+**Install now all the programms needed for compilation of code for the different supported robot systems, maybe you do not need all of them**
+*
