@@ -37,6 +37,6 @@ License information is available here [https://github.com/OpenRoberta/robertalab
   * determine the log file with e.g. `>> log.txt`
   * determine an error log with e.g. `2>> error.txt`
   * run the server in the background: wrap the start command with `nohup` and `&`
-  * example server start in a linux linux terminal: `nohup ./start-server.sh -d robot.whitelist=sim,ev3lejos,ev3dev,calliope2017,calliope2016,nxt,microbit,ardu,nao -d server.port=1234>>log.txt`
+  * example server start in a linux linux terminal: `nohup ./start-server.sh -d robot.whitelist=sim,ev3lejos,ev3dev -d server.port=1234>>log.txt`
 
   
