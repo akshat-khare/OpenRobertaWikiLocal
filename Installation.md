@@ -29,9 +29,10 @@ License information is available here [https://github.com/OpenRoberta/robertalab
 
 ### Start the Open Roberta Lab server
 * the simplest way is to start the server via the start script `start-db.sh` or `start-db.bat`. Double click it or execute it in a terminal.
-* You can configure the start of the server with parameters for the start script:
+* You can configure the start of the server with parameters for the start script, here is an overview what is possible and the default values:
   * determine the port: -d server.port=1999
-  * determine the available robot systems: -d robot.whitelist=sim,ev3lejos,ev3dev,calliope2017,calliope2016,nxt,microbit,ardu,nao
+  * determine the available robot systems:  
+    -d robot.whitelist=sim,ev3lejos,ev3dev,calliope2017,calliope2016,nxt,microbit,ardu,nao
   * determine the directory server internal temporary files: -d plugin.tempdir=/tmp/
   * determine the log file with e.g. `>> log.txt
   * determine an error log with e.g. `2>> error.txt
