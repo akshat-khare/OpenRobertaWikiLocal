@@ -13,7 +13,7 @@ License information is available here [https://github.com/OpenRoberta/robertalab
 ### Get the necessary programs / packages for your system, used by the Open Roberta server:
 * make sure that Java Runtime Environment (JRE) is available. Open a command prompt and type `java -version`, if it is already available then the output is something with `java version "1.8.a_b"`. It should be something with java version 1.8... otherwise check the oracle websites for how to get it.
 
-**Install now all the programms needed for compilation of code for the different supported robot systems, maybe you do not need all of them**
+**Install now all the programs needed for compilation of code for the different supported robot systems, maybe you do not need all of them**
 * on linux systems (Ubuntu)
   * Arduino based robots, e.g. Bot'n Roll
     * `sudo apt-get install libusb-0.1-4`
@@ -24,3 +24,17 @@ License information is available here [https://github.com/OpenRoberta/robertalab
     * `sudo apt-get install gcc-arm-none-eabi srecord libssl-dev`
   * for micro:bit
     * `pip install uflash`  
+* on Windows systems
+  * comming soon
+
+### Start the Open Roberta Lab server
+* the simplest way is to start the server via the start script `start-db.sh` or `start-db.bat`. Double click it or execute it in a terminal.
+* You can configure the start of the server with parameters for the start script:
+  * determine the port: -d server.port=1999
+  * determine the available robot systems: -d robot.whitelist=sim,ev3lejos,ev3dev,calliope2017,calliope2016,nxt,microbit,ardu,nao
+  * determine the directory server internal temporary files: -d plugin.tempdir=/tmp/
+  * determine the log file with e.g. `>> log.txt
+  * determine an error log with e.g. `2>> error.txt
+  * run the server in the background: wrap the start command with `nohup` and `&`
+
+  
