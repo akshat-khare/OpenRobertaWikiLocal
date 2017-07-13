@@ -6,7 +6,7 @@ We want to make it easy for our users and contributors to get in touch with us a
 
 The Open Roberta Google Group is a good first stop for a general inquiry about the Open Roberta Lab. It's also a good forum for discussions about the roadmap or potential new functionality.
 
-##IRC
+## IRC
 
 `#open-roberta`
 
