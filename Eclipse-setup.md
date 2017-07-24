@@ -17,4 +17,4 @@ If you have errors with hibernate, add this argument as well:
 
 After updating certain resources or if something gets cached and does not change, right click on any project and go to Maven->Update project, in the window that pops up, select all related projects and update.
 
-If you encounter "<name of robot>" has invalid factory - class not found exception - this is due to the fact that your classpath is not updated. Right click OpenRobertaServer project, go to properties -> java build path -> projects and add all robot plugin projects (not sure if TestResources should be there) and click apply. Now all needed classes should be on the class path.
+If you encounter "name of robot" has invalid factory - class not found exception - this is due to the fact that your classpath is not updated. Right click OpenRobertaServer project, go to properties -> java build path -> projects and add all robot plugin projects (not sure if TestResources should be there) and click apply. Now all needed classes should be on the class path.
