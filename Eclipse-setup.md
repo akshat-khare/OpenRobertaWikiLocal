@@ -19,7 +19,7 @@ After updating certain resources or if something gets cached and does not change
 
 If you encounter "name of robot" has invalid factory - class not found exception - this is due to the fact that your classpath is not updated. Right click OpenRobertaServer project, go to properties -> java build path -> projects and add all robot plugin projects (not sure if TestResources should be there) and click apply. Now all needed classes should be on the class path.
 
-If you wish to counter long package names and provide somewhat clearer package explorer view, then go to Window -> Preferences -> Appearance and tick the "Abbreviate package names" checkbox. A suggested template for this is as follows:
+If you wish to counter long package names and provide somewhat clearer package explorer view, then go to Window -> Preferences -> Java -> Appearance and tick the "Abbreviate package names" checkbox. A suggested template for this is as follows:
 
 * de.fhg.iais.roberta={rob}
 * de.fhg.iais.roberta.syntax={syntax}
