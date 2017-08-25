@@ -5,14 +5,10 @@ Command | Description
 git checkout develop | get the work of all developers ... 
 git pull | … from the remote repository
 git branch myFeature | create a new feature branch ...
-git checkout myFeature | … and start working with it
-                       | code in eclipse, write tests, ...
-                       | if you have made changes in any javascript file, don't forget to run >> build.py << to make your changes available in the compressed version of our javascript files.
+git checkout myFeature | … and start working with it. code in eclipse, write tests, ... . if you have made changes in any javascript file, don't forget to run >> build.py << to make your changes available in the compressed version of our javascript files.
 git status | list all files, that have been created, modified or deleted
 git add <file1> <file2> | add one or more files for a commit. "add ." add all files. "add -u" add all modified files
-git commit -m "reasonable message" | commit it into the local feature branch
-  | coding, adding, committing may happen many times. All changes are local.
-  | now everything is committed, the work is done, others should take advantage of your work
+git commit -m "reasonable message" | commit it into the local feature branch. coding, adding, committing may happen many times. All changes are local. | now everything is committed, the work is done, others should take advantage of your work
 git checkout develop | you need to know, what others have done since your branch. Thus: get their work ...
 git pull | … from the remote repository. No problem here.
 git checkout myFeature | you have to check, whether work of others conflicts with your work
