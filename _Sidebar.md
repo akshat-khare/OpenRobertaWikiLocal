@@ -11,6 +11,7 @@
 * [[EV3 and ev3dev]]
 * [[Creating the OR leJOS image]]
 * [[Official server deployment]]
+* [[Arduino Create Agent]]
 
 **Development**
 * Get Started
