@@ -4,8 +4,8 @@ In order to use Create Agent one must install it first. The last windows release
 
 Links to installers:
 
-*[For Windows](http://downloads.arduino.cc/CreateBridgeStable/ArduinoCreateAgent-1.1-windows-installer.exe)
-*[For Linux](http://downloads.arduino.cc/CreateBridgeStable/ArduinoCreateAgent-1.1-linux-x64-installer.tar.gz)
+* [For Windows](http://downloads.arduino.cc/CreateBridgeStable/ArduinoCreateAgent-1.1-windows-installer.exe)
+* [For Linux](http://downloads.arduino.cc/CreateBridgeStable/ArduinoCreateAgent-1.1-linux-x64-installer.tar.gz)
 
 A couple of things need to be changed for the Create Agent to work with RobertaLab:
 
