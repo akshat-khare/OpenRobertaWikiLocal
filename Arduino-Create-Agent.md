@@ -19,7 +19,7 @@ If you run into a problem that will be logged by the agent as "avrdude: ser_open
 1. Add a createagent group:
 sudo addgroup createagent
 2. Add yourself to this group:
-sudo usermod -a -G createagent <username>
+sudo usermod -a -G createagent username
 3. Create a file 45-createagent.rules with the following content:
 
 `# Bob3`
