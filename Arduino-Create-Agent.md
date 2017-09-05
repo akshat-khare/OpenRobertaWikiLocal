@@ -21,12 +21,12 @@ sudo addgroup createagent
 2. Add yourself to this group:
 sudo usermod -a -G createagent <username>
 3. Create a file 45-createagent.rules with the following content:
-# Bob3
+`# Bob3
 SUBSYSTEM=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0933", SYMLINK+="bob3", GROUP="createagent", MODE="0666"
 # mBot
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="bob3", GROUP="createagent", MODE="0666"
 # BotNRoll
-SUBSYSTEM=="usb", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="bob3", GROUP="createagent", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="bob3", GROUP="createagent", MODE="0666"`
 4. Copy this file to /etc/udev/rules.d. From a console window type:
 sudo cp 45-createagent.rules /etc/udev/rules.d
 
