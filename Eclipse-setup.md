@@ -6,6 +6,24 @@ Eclipse setup is fairly simple,
 * Do the same for Javascript
 * Go to OpenRobertaServer project (de.fhg.iais.roberta.main) locate and run as java program ServerStarter.java
 
+Another thing to configure in Eclipse is to setup 'save actions' in Preferences->Java->Editor. They should be all ticked with 'Format all lines selected'. Actions themselves should be the following:
+
+* Add 'this' qualifier to unqualified field accesses
+* Change non static accesses to static members using declaring type
+* Change indirect accesses to static members to direct accesses (accesses through subtypes)
+* Convert control statement bodies to block
+* Add final modifier to private fields
+* Use lambda where possible
+* Remove unnecessary parentheses
+* Remove unused imports
+* Add missing '@Override' annotations
+* Add missing '@Override' annotations to implementations of interface methods
+* Add missing '@Deprecated' annotations
+* Remove unnecessary casts
+* Remove unnecessary '$NON-NLS$' tags
+* Remove trailing white spaces on all lines
+* Correct indentation
+
 You are now running OpenRoberta server locally on tour machine and can edit all the code and see the effect in the browser at localhost:1999
 
 If you encounter an error with "...db parent folder OpenRobertaServer..." go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
