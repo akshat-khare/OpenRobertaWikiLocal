@@ -1,10 +1,13 @@
-Eclipse setup is fairly simple,
+Eclipse setup is fairly simple. Before we import the Open Roberta Lab project into the eclipse workspace first we have to modify some settings.
 
-* Open eclipse and use File->Import to import new maven projects
-* Select the root directory and tick all related projects to import
-* After importing go to Window->Preferences->Java->Code Style->Formatter and import java formatter from Resources folder
+### Adding custom code style formatter 
+
+We have designed our code style formatter for Java and JavaScript code. 
+
+* Go to **Window->Preferences->Java->Code Style->Formatter** and import _openRobertaJava_ formatter from _robertalab/Resources/formatter_ folder
 * Do the same for Javascript
-* Go to OpenRobertaServer project (de.fhg.iais.roberta.main) locate and run as java program ServerStarter.java
+
+### Setup 'save actions'
 
 Another thing to configure in Eclipse is to setup 'save actions' in Preferences->Java->Editor. They should be all ticked with 'Format all lines selected'. Actions themselves should be the following:
 
@@ -24,7 +27,26 @@ Another thing to configure in Eclipse is to setup 'save actions' in Preferences-
 * Remove trailing white spaces on all lines
 * Correct indentation
 
+If you wish to counter long package names and provide somewhat clearer package explorer view, then go to Window -> Preferences -> Java -> Appearance and tick the "Abbreviate package names" checkbox. A suggested template for this is as follows:
+
+* de.fhg.iais.roberta={rob}
+* de.fhg.iais.roberta.syntax={syntax}
+* de.fhg.iais.roberta.mode={mode}
+* de.fhg.iais.roberta.factory={factory}
+
+### Importing the project
+
+* Open eclipse and use File->Import to import new maven projects
+* Select the OpenRobertaParent directory and tick all related projects to import
+* Right click OpenRobertaServer project, go to **properties -> java build path -> projects** and add all robot plugin projects and click apply.
+* Go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
+In this tab add:
+`-d database.parentdir=<path to git repository>\OpenRobertaServer\` 
+* Go to OpenRobertaServer project (de.fhg.iais.roberta.main) locate and run as java program ServerStarter.java
+
 You are now running OpenRoberta server locally on tour machine and can edit all the code and see the effect in the browser at localhost:1999
+
+### Possible errors
 
 If you encounter an error with "...db parent folder OpenRobertaServer..." go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
 In this tab add:
@@ -35,11 +57,8 @@ If you have errors with hibernate, add this argument as well:
 
 After updating certain resources or if something gets cached and does not change, right click on any project and go to Maven->Update project, in the window that pops up, select all related projects and update.
 
-If you encounter "name of robot" has invalid factory - class not found exception - this is due to the fact that your classpath is not updated. Right click OpenRobertaServer project, go to properties -> java build path -> projects and add all robot plugin projects (not sure if TestResources should be there) and click apply. Now all needed classes should be on the class path.
 
-If you wish to counter long package names and provide somewhat clearer package explorer view, then go to Window -> Preferences -> Java -> Appearance and tick the "Abbreviate package names" checkbox. A suggested template for this is as follows:
+If you encounter "name of robot" has invalid factory - class not found exception - this is due to the fact that your classpath is not updated. Right click OpenRobertaServer project, go to properties -> java build path -> projects and add all robot plugin projects and click apply. Now all needed classes should be on the class path.
 
-* de.fhg.iais.roberta={rob}
-* de.fhg.iais.roberta.syntax={syntax}
-* de.fhg.iais.roberta.mode={mode}
-* de.fhg.iais.roberta.factory={factory}
+
+
