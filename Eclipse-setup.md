@@ -42,6 +42,7 @@ If you wish to counter long package names and provide somewhat clearer package e
 * Go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
 In this tab add:
 `-d database.parentdir=<path to git repository>\OpenRobertaServer\` 
+* Go to OpenRobertaParent/OpenRobertaServer copy the dbBase folder to db-x.y.z (current version of the server)
 * Go to OpenRobertaServer project (de.fhg.iais.roberta.main) locate and run as java program ServerStarter.java
 
 You are now running OpenRoberta server locally on tour machine and can edit all the code and see the effect in the browser at localhost:1999
