@@ -1,4 +1,4 @@
-We will apply for Google Summer of Code 2017.
+We will apply for Google Summer of Code 2018.
 
 Keep your fingers crossed, that we get accepted ;-) ...
 
@@ -68,3 +68,8 @@ On the technical side, the project involves:
 * adding UI support for showing the sensor values
 
 Mentor:
+
+## The Open Roberta Lab standalone version
+The number of users of the lab increases daily. Nevertheless their are still a lot of schools with no or limited internet access. Is their a way to help them?
+One idea could be to integrate the server in a web view and run it fully locally. We also think about to combine it with parts of the USB program.
+TODO provide more ideas
