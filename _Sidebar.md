@@ -1,6 +1,6 @@
 **[[Roadmap]]**
 
-**[[Google Summer of Code 2017]]**
+**[[Google Summer of Code 2018]]**
 
 **[[Community]]**
 
