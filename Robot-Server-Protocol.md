@@ -22,6 +22,7 @@ The robot and the server are using JsonObjects to exchange information. An examp
 ```json
 {
   "firmwarename":"lejos",
+  "robot":"robotName",
   "macaddr":"74-DA-38-28-9F-A6",
   "cmd":"register",
   "firmwareversion":"0.9.0-beta",
