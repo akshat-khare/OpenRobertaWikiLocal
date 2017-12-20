@@ -72,6 +72,7 @@ Usually, to take benefit of the new files, the robot system has to reboot or it 
 There is a new field nepoexitvalue in the push protocol, which provides informations about running nepo programs, especially if they fail to execute:
   * 0: the program executed fine
   * 1: class loading error (lejos ev3)
+  * 2: program execution error (NAO python)
   * ...
   * 143: program was killed from the ui
 This field is not mandatory for the registration but can be added later after a nepo program was executed the first time. How to react on different exit codes must be programmed in the javascript client (e. g. popup for the user with a message).
