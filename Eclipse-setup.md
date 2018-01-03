@@ -41,7 +41,7 @@ If you wish to counter long package names and provide somewhat clearer package e
 * Right click OpenRobertaServer project, go to **properties -> java build path -> projects** and add all robot plugin projects and click apply.
 * Go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
 In this tab add:
-`-d database.parentdir=<path to git repository>\OpenRobertaServer\` 
+`-d database.parentdir=<path to git repository>/OpenRobertaParent/OpenRobertaServer/` 
 * Go to OpenRobertaParent/OpenRobertaServer copy the dbBase folder to db-x.y.z (current version of the server)
 * Go to OpenRobertaServer project (de.fhg.iais.roberta.main) locate and run as java program ServerStarter.java
 
@@ -51,10 +51,10 @@ You are now running OpenRoberta server locally on tour machine and can edit all 
 
 If you encounter an error with "...db parent folder OpenRobertaServer..." go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
 In this tab add:
-`-d database.parentdir=<path to git repository>\OpenRobertaServer\` 
+`-d database.parentdir=<path to git repository>/OpenRobertaParent/OpenRobertaServer/` 
 argument and now the database will be found. 
 If you have errors with hibernate, add this argument as well: 
-`-d hibernate.connection.url=jdbc:hsqldb:file:<path to git repository>\OpenRobertaServer\db-<insert version here>\openroberta-db`
+`-d hibernate.connection.url=jdbc:hsqldb:file:<path to git repository>/OpenRobertaParent/OpenRobertaServer/db-<insert version here>/openroberta-db`
 
 After updating certain resources or if something gets cached and does not change, right click on any project and go to Maven->Update project, in the window that pops up, select all related projects and update.
 
