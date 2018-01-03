@@ -23,7 +23,10 @@ License information is available here [https://github.com/OpenRoberta/robertalab
   * for Calliope
     * `sudo apt-get install gcc-arm-none-eabi srecord libssl-dev`
   * for micro:bit
-    * `pip install uflash`  
+    * `pip install uflash`
+* on Linux systems (Fedora, probably also CentOS, RHEL and derivatives)
+  * for Calliope
+    * `# sudo dnf install arm-none-eabi-gcc-cs.x86_64 arm-none-eabi-gcc-cs-c++.x86_64 arm-none-eabi-newlib.noarch srecord`
 * on Windows systems
   * comming soon
 
