@@ -39,25 +39,24 @@ If you wish to counter long package names and provide somewhat clearer package e
 * Open eclipse and use File->Import to import new maven projects
 * Select the OpenRobertaParent directory and tick all related projects to import
 * Right click OpenRobertaServer project, go to **properties -> java build path -> projects** and add all robot plugin projects and click apply.
-* Go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
-In this tab add:
-`-d database.parentdir=<path to git repository>/OpenRobertaParent/OpenRobertaServer/` 
-* Go to OpenRobertaParent/OpenRobertaServer copy the dbBase folder to db-x.y.z (current version of the server)
-* Go to OpenRobertaServer project (de.fhg.iais.roberta.main) locate and run as java program ServerStarter.java
 
 You are now running OpenRoberta server locally on tour machine and can edit all the code and see the effect in the browser at localhost:1999
 
-### Possible errors
+### Start the server
+* Go to OpenRobertaServer project (de.fhg.iais.roberta.main) locate and run as java program ServerStarter.java
+  * This will immediately start the server, but paths to the compiler are not correct until now
+  * Terminate the server with a click on the red square
+* Go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
+  * in Program Arguments add: `-d database.parentdir=<path to git repository>/OpenRobertaParent/OpenRobertaServer/` 
+  * in Working directory: Check Other and add: `<path to your git repo>/robertalab/`
 
-If you encounter an error with "...db parent folder OpenRobertaServer..." go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments. 
-In this tab add:
-`-d database.parentdir=<path to git repository>/OpenRobertaParent/OpenRobertaServer/` 
-argument and now the database will be found. 
-If you have errors with hibernate, add this argument as well: 
+
+
+### Possible errors
+If you encounter an error with hibernate go to run configurations in Eclipse (drop-down arrow next to green run button), select ServerStarter and go to Arguments, add this argument as well: 
 `-d hibernate.connection.url=jdbc:hsqldb:file:<path to git repository>/OpenRobertaParent/OpenRobertaServer/db-<insert version here>/openroberta-db`
 
 After updating certain resources or if something gets cached and does not change, right click on any project and go to Maven->Update project, in the window that pops up, select all related projects and update.
-
 
 If you encounter "name of robot" has invalid factory - class not found exception - this is due to the fact that your classpath is not updated. Right click OpenRobertaServer project, go to properties -> java build path -> projects and add all robot plugin projects and click apply. Now all needed classes should be on the class path.
 
