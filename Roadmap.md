@@ -5,6 +5,9 @@ The Open Roberta Lab is **the** platform to program robots and other interrestin
 * Support many different interresting robot systems.
 * Provide the necessary features for teacher, kids and parents to make the programming experience as intuitive and successful as possible.
 
+## 2018
+* Many of the different supported robots cannot connect to our server on their own, for this we provide an USB connection program. This program needs to be revised, expanded, renewed. Please find more information [here](USB-Program)
+
 ## 2017
 For this year we will focus on integrating more robot systems, especially arduino based robots and providing additional support for teachers, like managing groups. Also we would like to maintain and improve the already existing robot systems.
 
