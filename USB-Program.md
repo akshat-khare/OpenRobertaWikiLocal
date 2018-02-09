@@ -12,8 +12,11 @@
 1. select a language, maybe go and qt
 2. rewrite the usb program with a plugin structure
 
+
 -> publish this
 
-1. think about rewriting it again to behave similar than calliope, save as and drag and drop binaries
+1. think about adding a behavior similar than calliope, save as and drag and drop binaries
+2. if possible, add a webview
+3. ...
 
-... implement this
+-> implement this
