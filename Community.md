@@ -6,11 +6,11 @@ We want to make it easy for our users and contributors to get in touch with us a
 
 The Open Roberta Google Group is a good first stop for a general inquiry about the Open Roberta Lab. It's also a good forum for discussions about the roadmap or potential new functionality.
 
-## IRC
+## gitter (formerly IRC)
 
-`#open-roberta`
+https://gitter.im/open-roberta-lab/Lobby
 
-We are using the IRC channel `#open-roberta` on Freenode for our developer group. Feel free to join the group.
+From February on, we use gitter for our developer group. Feel free to join the group.
 
 ## GitHub
 
