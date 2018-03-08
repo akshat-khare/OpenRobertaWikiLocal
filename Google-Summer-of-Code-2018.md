@@ -13,11 +13,11 @@ Have a look at our list of proposals for GSOC. If you have another good idea, do
 
 Many robots support a large variety of hardware addons. Even robots like the LEGO MINDSTORMS® EV3 can be used with 3rd party sensors and actuators. In this project the student would design a system that lets the user create new blocks to support additional hardware.
 
-Initially such blocks would be stored with the project. A better way would be to store them in the user's account (if logged in). A stretch goal would be to add support for contributing/sharing blocks.
+Currently such changes require modification on the server side and a new release. A lot of the code that is needed is quite similar though. Initially such custom blocks would be stored with the project. A better way would be to store them in the user's account (if logged in). A stretch goal would be to add support for contributing/sharing blocks.
 
 On the technical side, the project involves:
-code generators for the new blocks (maybe based on some template)
-a way to include custom library code (e.g. on the Arduino side)
+* code generators for the new blocks (maybe based on some template)
+* a way to include custom library code (e.g. on the Arduino side)
 
 Mentor: Stefan
 
