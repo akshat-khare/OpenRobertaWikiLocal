@@ -71,3 +71,11 @@ Mentor:
 The number of users of the lab increases daily. Nevertheless their are still a lot of schools with no or limited internet access. Is their a way to help them?
 One idea could be to integrate the server in a web view and run it fully locally. We also think about to combine it with parts of the USB program.
 TODO provide more ideas
+
+## Multiagent simulation
+
+The Open Roberta® Lab provides ​a simulation, where our users can test their programs without a real robot. Currently the simulation only supports one board and we would like to extend it in such a way that it is possible to simulate behavior of two or more robots. First step would be an implementation of such a system with a static robot, e.g. Calliope, where all multiagent interaction is restricted by message exchange.
+Here, the connection between two client programs on the server has to be established (including UI).
+Further steps would include multiagent simulation for driving robots like EV3, NXT and possibly Bot'n Roll.
+
+Mentor:
