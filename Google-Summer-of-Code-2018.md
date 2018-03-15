@@ -5,7 +5,7 @@ Before you apply, please have a look at what we have already developed. Play aro
 
 If you have already committed to an Open Source project, please provide a link to this in your application. If you haven't, no problem, but maybe you can provide us some other samples of your programming experience. Also student's projects are welcome.
 
-Have a look at our list of proposals for GSOC. If you have another good idea, don't hesitate to come up with your own project proposal. Maybe you would like to discuss it with us before you apply, please use [Gitter](https://gitter.im/open-roberta-lab/Lobby)
+Have a look at our list of proposals for GSOC. If you have another good idea, don't hesitate to come up with your own project proposal. Maybe you would like to discuss it with us before you apply, please use [Gitter](https://gitter.im/open-roberta-lab/GSoC)
 
 
 
