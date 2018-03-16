@@ -37,7 +37,7 @@ As part of the project, you'd need to:
 [GitHub Ticket1](https://github.com/OpenRoberta/robertalab/issues/90)
 [GitHub Ticket2](https://github.com/OpenRoberta/robertalab/issues/216)
 
-Mentor: 
+Mentor: Evgeniya
 
 
 ## Interactive source code view (Medium/Hard)
@@ -54,7 +54,7 @@ On the technical side, the project involves:
 * optionally, linking the block parameters to the parameters in the generated code
 * optionally, improving the readability of generated code
 
-Mentor:
+Mentor: Kostadin, Beate, Reinhard
 
 
 ## The NEPO debugger (Medium/Hard)
@@ -65,17 +65,19 @@ On the technical side, the project involves:
 * adding UI support for highlighting the current executed code
 * adding UI support for showing the sensor values
 
-Mentor:
+Mentor: Kostadin, Reinhard
 
 ## The Open Roberta Lab standalone version
 The number of users of the lab increases daily. Nevertheless their are still a lot of schools with no or limited internet access. Is their a way to help them?
 One idea could be to integrate the server in a web view and run it fully locally. We also think about to combine it with parts of the USB program.
 TODO provide more ideas
 
-## Multiagent simulation (Medium)
+Mentor: Beate, Stefan
+
+## Multiple robots in the simulation (Medium)
 
 The Open Roberta® Lab provides ​a simulation, where our users can test their programs without a real robot. Currently the simulation only supports one board and we would like to extend it in such a way that it is possible to simulate behavior of two or more robots. First step would be an implementation of such a system with a static robot, e.g. Calliope, where all multiagent interaction is restricted by message exchange.
 Here, the connection between two client programs on the server has to be established (including UI).
 Further steps would include multiagent simulation for driving robots like EV3, NXT and possibly Bot'n Roll.
 
-Mentor:
+Mentor: Evgeniya, Kostadin, Beate
