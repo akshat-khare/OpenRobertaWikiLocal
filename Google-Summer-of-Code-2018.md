@@ -1,7 +1,7 @@
 We have been selected as an org for Google Summer of Code 2018!
 
 ## Application instructions
-Before you apply, please have a look at what we have already developed. Play around with our [lab](https://lab.open-roberta.org), fork the robertalab repository, try to install and run it locally. Feel free to ask us for help, if necessary.
+Before you [apply](https://summerofcode.withgoogle.com/organizations/6256279438229504/), please have a look at what we have already developed. Play around with our [lab](https://lab.open-roberta.org), fork the robertalab repository, try to install and run it locally. Feel free to ask us for help, if necessary.
 
 If you have already committed to an Open Source project, please provide a link to this in your application. If you haven't, no problem, but maybe you can provide us some other samples of your programming experience. Also student's projects are welcome.
 
