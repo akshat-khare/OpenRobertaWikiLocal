@@ -18,6 +18,7 @@
   * [[Git Workflow]]
   * [[Eclipse setup]]
 * Architecture
+  * [[System Overview]]
   * [[Robot-Server Protocol]]
   * [[Plugin Structure for Robots]]
 * Blockly
