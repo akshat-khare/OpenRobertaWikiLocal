@@ -21,6 +21,7 @@
   * [[System Overview]]
   * [[Robot-Server Protocol]]
   * [[Plugin Structure for Robots]]
+  * [[NAO client]]
 * Blockly
   * [[Adding new blockly block in frontend]]
   * [[Connecting blockly block with java backend]]
