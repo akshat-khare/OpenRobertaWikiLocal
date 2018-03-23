@@ -3,8 +3,9 @@ The OpenRoberta software consists of a server component, sub modules for [robot 
 # Server
 The server side components are written in Java and located in the source tree under [OpenRobertaParent/OpenRobertaServer/src](https://github.com/OpenRoberta/robertalab/tree/develop/OpenRobertaParent/OpenRobertaServer/src).
 
+Persistence is implemented using the [hibernate orm](http://hibernate.org/orm/) and all entities are defined under [OpenRobertaServer/src/main/java/de/fhg/iais/roberta/persistence/bo](https://github.com/OpenRoberta/robertalab/tree/develop/OpenRobertaParent/OpenRobertaServer/src/main/java/de/fhg/iais/roberta/persistence/bo).
+
 _TODO_:
-* database scheme + hibernate
 * main server components
 
 # Web Frontend
