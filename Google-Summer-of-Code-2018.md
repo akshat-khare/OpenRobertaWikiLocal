@@ -69,8 +69,10 @@ Mentor: Kostadin, Reinhard
 
 ## The Open Roberta Lab standalone version
 The number of users of the lab increases daily. Nevertheless their are still a lot of schools with no or limited internet access. Is their a way to help them?
-One idea could be to integrate the server in a web view and run it fully locally. We also think about to combine it with parts of the USB program.
-TODO provide more ideas
+One idea could be to integrate the server in a web view and run it fully locally. Ideally this will customize the web-ui to e.g. hide the menu for user-login etc.
+We also think about to combine it with parts of the USB program to allow working with local robots (since otherwise e.g. the lego-ev3 would try to connect to the online server).
+
+If all that work, it would be interesting to e.g. package this as a mobile app (e.g. for android).
 
 Mentor: Beate, Stefan
 
