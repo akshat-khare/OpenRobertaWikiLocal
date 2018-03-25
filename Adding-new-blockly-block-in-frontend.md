@@ -1,7 +1,7 @@
 In order to add blockly blocks to OpenRoberta the first thing you need is to clone `https://github.com/OpenRoberta/blockly.git`.
 Inside this repository there is a folder blocks that contains all javascript files containing blocks that will get merged together on build stage. Go inside the 'blocks' folder and choose an appropriate file (currently files are named after robots or grouped by some logic). If you feel that your blocks fall into some specific group that is not present, just create a new file. Typically files are named <robot>Actions.js <robot>Sensors.js and so on.
 
-simSensors.js can serve as an exmaple:
+simSensors.js can serve as an example:
 
 [SimSensors](https://github.com/OpenRoberta/blockly/blob/master/blocks/simSensors.js)
 
@@ -13,7 +13,10 @@ Play around with this simple block to see how it changes. You can observe the ch
 
 Another important thing in the playground is that blocks are grouped in toolboxes, so in order to actually be able to use the block it must be put in the appropriate toolbox:
 
-`<category name='TOOLBOX_SENSOR' svg="true">`
-`<block type='sim_touch_isPressed'></block>`
+```xml
+<category name='TOOLBOX_SENSOR' svg="true">
+<block type='sim_touch_isPressed'></block>
+...
+```
 
-The above example adds blocks of given types (see blockly block name above) to TOOLBOX_SENSOR toolbox.
+The above example adds blocks of given types (see blockly block name above) to `TOOLBOX_SENSOR` toolbox.
