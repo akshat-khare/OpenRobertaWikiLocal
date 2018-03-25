@@ -13,13 +13,16 @@ Have a look at our list of proposals for GSOC. If you have another good idea, do
 
 Many robots support a large variety of hardware addons. Even robots like the LEGO MINDSTORMS® EV3 can be used with 3rd party sensors and actuators. In this project the student would design a system that lets the user create new blocks to support additional hardware.
 
-Currently such changes require modification on the server side and a new release (see the two articles on blockly - [Adding new blockly block in frontend](https://github.com/OpenRoberta/robertalab/wiki/Adding-new-blockly-block-in-frontend),[Connecting blockly block with java backend](https://github.com/OpenRoberta/robertalab/wiki/Connecting-blockly-block-with-java-backend)). A lot of the code that is needed is quite similar though. Initially such custom blocks would be stored with the project. A better way would be to store them in the user's account (if logged in). A stretch goal would be to add support for contributing/sharing blocks.
+Currently such changes require modification on the server side and a new release (see the two articles on blockly - [Adding new blockly block in frontend](https://github.com/OpenRoberta/robertalab/wiki/Adding-new-blockly-block-in-frontend),[Connecting blockly block with java backend](https://github.com/OpenRoberta/robertalab/wiki/Connecting-blockly-block-with-java-backend)). A lot of the code that is needed to handle a new block on the server and on the web-frontend is quite similar though.
+
+A first step would be to add infrastructure to reduce code duplication in the project. Later this can be expanded to let users define their own blocks. Initially such custom blocks would be stored with the project. A better way would be to store them in the user's account (if logged in). A stretch goal would be to add support for contributing/sharing blocks.
 
 On the technical side, the project involves:
-* code generators for the new blocks (maybe based on some template)
+* code generators for the new blocks (maybe based on some templating)
 * a way to include custom library code (e.g. on the Arduino side)
+* adding those custom blocks to the blockly toolbox in the web ui
 
-Mentor: Stefan
+Mentor: Stefan (ensonic)
 
 ## Support for custom assets (EV3, NXT)
 
@@ -74,7 +77,7 @@ We also think about to combine it with parts of the USB program to allow working
 
 If all that work, it would be interesting to e.g. package this as a mobile app (e.g. for android).
 
-Mentor: Beate, Stefan
+Mentor: Beate, Stefan (ensonic)
 
 ## Multiple robots in the simulation (Medium)
 
