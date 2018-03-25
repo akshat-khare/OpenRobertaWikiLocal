@@ -14,8 +14,8 @@ Play around with this simple block to see how it changes. You can observe the ch
 Another important thing in the playground is that blocks are grouped in toolboxes, so in order to actually be able to use the block it must be put in the appropriate toolbox:
 
 ```xml
-<category name='TOOLBOX_SENSOR' svg="true">
-<block type='sim_touch_isPressed'></block>
+<category name="TOOLBOX_SENSOR" svg="true">
+<block type="sim_touch_isPressed"></block>
 ...
 ```
 
