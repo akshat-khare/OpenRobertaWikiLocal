@@ -22,6 +22,11 @@ On the technical side, the project involves:
 * a way to include custom library code (e.g. on the Arduino side)
 * adding those custom blocks to the blockly toolbox in the web ui
 
+A challenge will be to handle the simulation too ad this will be a super-stretch goal:
+* js code
+* how the sensor/actor will look like and where it is located on the robot
+* how to render the actor and how to supply values to the sensor
+
 Mentor: Stefan (ensonic)
 
 ## Support for custom assets (EV3, NXT)
