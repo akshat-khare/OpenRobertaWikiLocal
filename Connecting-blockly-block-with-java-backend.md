@@ -18,3 +18,5 @@ In order the mapping to be successful one has to:
 *  name(s) of the blockly block(s) that we want to map
 
 **Note**: A relation is one java class to many blockly blocks
+
+### Implement Java class that corresponds to Blockly block(s)
