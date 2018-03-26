@@ -2,6 +2,10 @@ The various robots systems we support come with different options for connectivi
 
 | Robot   | Connection | Description |
 |---------|------------|-------------|
-|ev3dev   | wifi       | ev3 connects to server      |
-|ev3lejos | usb        | usb program connects to ev3 |
-|*        | wifi       | ev3 connects to server      |
+|calliope | usb        | appears as flash-drive on the connected computer |
+|ev3dev   | usb        | ev3 connects to server, internet shared via connected computer |
+|*        | wifi       | ev3 connects to server |
+|ev3lejos | usb        | usb program connects to ev3, ev3 does not connect to internet |
+|*        | wifi       | ev3 connects to server |
+|microbit | usb        | appears as flash-drive on the connected computer |
+|nxt      | usb        | usb program connects to nxt |
