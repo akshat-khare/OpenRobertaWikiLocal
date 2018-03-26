@@ -27,3 +27,4 @@
   * [[Connecting blockly block with java backend]]
 
 **Discussions on future development**
+ * [[Lists vs arrays problem]]
