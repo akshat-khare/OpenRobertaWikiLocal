@@ -25,3 +25,5 @@
 * Blockly
   * [[Adding new blockly block in frontend]]
   * [[Connecting blockly block with java backend]]
+
+**Discussions on future development**
