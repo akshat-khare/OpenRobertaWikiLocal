@@ -27,6 +27,15 @@ Another thing to configure in Eclipse is to setup 'save actions' in Preferences-
 * Remove trailing white spaces on all lines
 * Correct indentation
 
+Here are the images which show what all fields are to be ticked.
+<p align="center">
+  <img src="/img/1.png" width="350"/>
+  <img src="/img/2.png" width="350"/>
+  <img src="/img/3.png" width="350"/>
+  <img src="/img/4.png" width="350"/>
+  <img src="/img/5.png" width="350"/>
+</p>
+
 If you wish to counter long package names and provide somewhat clearer package explorer view, then go to Window -> Preferences -> Java -> Appearance and tick the "Abbreviate package names" checkbox. A suggested template for this is as follows:
 
 * de.fhg.iais.roberta={rob}
